@@ -1,4 +1,4 @@
-/* line 4, ../scss/screen.scss */
+/* line 7, ../scss/screen.scss */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@
   user-select: none;
 }
 
-/* line 13, ../scss/screen.scss */
+/* line 16, ../scss/screen.scss */
 html, body {
   width: 100%;
   height: 100%;
@@ -20,12 +20,12 @@ html, body {
   background-color: #eee;
 }
 
-/* line 20, ../scss/screen.scss */
+/* line 23, ../scss/screen.scss */
 body {
   padding: 0 0 200px;
 }
 
-/* line 24, ../scss/screen.scss */
+/* line 27, ../scss/screen.scss */
 .controls-wrapper {
   width: 100%;
   height: 200px;
@@ -34,4 +34,587 @@ body {
   left: 0;
   right: 0;
   background-color: #e6e6e6;
+}
+
+/* line 37, ../scss/screen.scss */
+.object-wrapper {
+  width: 100%;
+  height: 100%;
+  border: 1px solid gray;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  -ms-perspective: 1000px;
+  -o-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+/* line 46, ../scss/screen.scss */
+.object {
+  width: 300px;
+  height: 540px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -270px -150px;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  animation: rotate3d 15s linear infinite 0s;
+  -webkit-animation: rotate3d 15s linear infinite 0s;
+  -moz-animation: rotate3d 15s linear infinite 0s;
+  -ms-animation: rotate3d 15s linear infinite 0s;
+  -o-animation: rotate3d 15s linear infinite 0s;
+}
+
+/* line 57, ../scss/screen.scss */
+.layer {
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
+  background: cadetblue;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-1 {
+  -webkit-transform: translateZ(0px);
+  -moz-transform: translateZ(0px);
+  -ms-transform: translateZ(0px);
+  -o-transform: translateZ(0px);
+  transform: translateZ(0px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-2 {
+  -webkit-transform: translateZ(1px);
+  -moz-transform: translateZ(1px);
+  -ms-transform: translateZ(1px);
+  -o-transform: translateZ(1px);
+  transform: translateZ(1px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-3 {
+  -webkit-transform: translateZ(2px);
+  -moz-transform: translateZ(2px);
+  -ms-transform: translateZ(2px);
+  -o-transform: translateZ(2px);
+  transform: translateZ(2px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-4 {
+  -webkit-transform: translateZ(3px);
+  -moz-transform: translateZ(3px);
+  -ms-transform: translateZ(3px);
+  -o-transform: translateZ(3px);
+  transform: translateZ(3px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-5 {
+  -webkit-transform: translateZ(4px);
+  -moz-transform: translateZ(4px);
+  -ms-transform: translateZ(4px);
+  -o-transform: translateZ(4px);
+  transform: translateZ(4px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-6 {
+  -webkit-transform: translateZ(5px);
+  -moz-transform: translateZ(5px);
+  -ms-transform: translateZ(5px);
+  -o-transform: translateZ(5px);
+  transform: translateZ(5px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-7 {
+  -webkit-transform: translateZ(6px);
+  -moz-transform: translateZ(6px);
+  -ms-transform: translateZ(6px);
+  -o-transform: translateZ(6px);
+  transform: translateZ(6px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-8 {
+  -webkit-transform: translateZ(7px);
+  -moz-transform: translateZ(7px);
+  -ms-transform: translateZ(7px);
+  -o-transform: translateZ(7px);
+  transform: translateZ(7px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-9 {
+  -webkit-transform: translateZ(8px);
+  -moz-transform: translateZ(8px);
+  -ms-transform: translateZ(8px);
+  -o-transform: translateZ(8px);
+  transform: translateZ(8px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-10 {
+  -webkit-transform: translateZ(9px);
+  -moz-transform: translateZ(9px);
+  -ms-transform: translateZ(9px);
+  -o-transform: translateZ(9px);
+  transform: translateZ(9px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-11 {
+  -webkit-transform: translateZ(10px);
+  -moz-transform: translateZ(10px);
+  -ms-transform: translateZ(10px);
+  -o-transform: translateZ(10px);
+  transform: translateZ(10px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-12 {
+  -webkit-transform: translateZ(11px);
+  -moz-transform: translateZ(11px);
+  -ms-transform: translateZ(11px);
+  -o-transform: translateZ(11px);
+  transform: translateZ(11px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-13 {
+  -webkit-transform: translateZ(12px);
+  -moz-transform: translateZ(12px);
+  -ms-transform: translateZ(12px);
+  -o-transform: translateZ(12px);
+  transform: translateZ(12px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-14 {
+  -webkit-transform: translateZ(13px);
+  -moz-transform: translateZ(13px);
+  -ms-transform: translateZ(13px);
+  -o-transform: translateZ(13px);
+  transform: translateZ(13px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-15 {
+  -webkit-transform: translateZ(14px);
+  -moz-transform: translateZ(14px);
+  -ms-transform: translateZ(14px);
+  -o-transform: translateZ(14px);
+  transform: translateZ(14px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-16 {
+  -webkit-transform: translateZ(15px);
+  -moz-transform: translateZ(15px);
+  -ms-transform: translateZ(15px);
+  -o-transform: translateZ(15px);
+  transform: translateZ(15px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-17 {
+  -webkit-transform: translateZ(16px);
+  -moz-transform: translateZ(16px);
+  -ms-transform: translateZ(16px);
+  -o-transform: translateZ(16px);
+  transform: translateZ(16px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-18 {
+  -webkit-transform: translateZ(17px);
+  -moz-transform: translateZ(17px);
+  -ms-transform: translateZ(17px);
+  -o-transform: translateZ(17px);
+  transform: translateZ(17px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-19 {
+  -webkit-transform: translateZ(18px);
+  -moz-transform: translateZ(18px);
+  -ms-transform: translateZ(18px);
+  -o-transform: translateZ(18px);
+  transform: translateZ(18px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-20 {
+  -webkit-transform: translateZ(19px);
+  -moz-transform: translateZ(19px);
+  -ms-transform: translateZ(19px);
+  -o-transform: translateZ(19px);
+  transform: translateZ(19px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-21 {
+  -webkit-transform: translateZ(20px);
+  -moz-transform: translateZ(20px);
+  -ms-transform: translateZ(20px);
+  -o-transform: translateZ(20px);
+  transform: translateZ(20px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-22 {
+  -webkit-transform: translateZ(21px);
+  -moz-transform: translateZ(21px);
+  -ms-transform: translateZ(21px);
+  -o-transform: translateZ(21px);
+  transform: translateZ(21px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-23 {
+  -webkit-transform: translateZ(22px);
+  -moz-transform: translateZ(22px);
+  -ms-transform: translateZ(22px);
+  -o-transform: translateZ(22px);
+  transform: translateZ(22px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-24 {
+  -webkit-transform: translateZ(23px);
+  -moz-transform: translateZ(23px);
+  -ms-transform: translateZ(23px);
+  -o-transform: translateZ(23px);
+  transform: translateZ(23px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-25 {
+  -webkit-transform: translateZ(24px);
+  -moz-transform: translateZ(24px);
+  -ms-transform: translateZ(24px);
+  -o-transform: translateZ(24px);
+  transform: translateZ(24px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-26 {
+  -webkit-transform: translateZ(25px);
+  -moz-transform: translateZ(25px);
+  -ms-transform: translateZ(25px);
+  -o-transform: translateZ(25px);
+  transform: translateZ(25px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-27 {
+  -webkit-transform: translateZ(26px);
+  -moz-transform: translateZ(26px);
+  -ms-transform: translateZ(26px);
+  -o-transform: translateZ(26px);
+  transform: translateZ(26px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-28 {
+  -webkit-transform: translateZ(27px);
+  -moz-transform: translateZ(27px);
+  -ms-transform: translateZ(27px);
+  -o-transform: translateZ(27px);
+  transform: translateZ(27px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-29 {
+  -webkit-transform: translateZ(28px);
+  -moz-transform: translateZ(28px);
+  -ms-transform: translateZ(28px);
+  -o-transform: translateZ(28px);
+  transform: translateZ(28px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-30 {
+  -webkit-transform: translateZ(29px);
+  -moz-transform: translateZ(29px);
+  -ms-transform: translateZ(29px);
+  -o-transform: translateZ(29px);
+  transform: translateZ(29px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-31 {
+  -webkit-transform: translateZ(30px);
+  -moz-transform: translateZ(30px);
+  -ms-transform: translateZ(30px);
+  -o-transform: translateZ(30px);
+  transform: translateZ(30px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-32 {
+  -webkit-transform: translateZ(31px);
+  -moz-transform: translateZ(31px);
+  -ms-transform: translateZ(31px);
+  -o-transform: translateZ(31px);
+  transform: translateZ(31px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-33 {
+  -webkit-transform: translateZ(32px);
+  -moz-transform: translateZ(32px);
+  -ms-transform: translateZ(32px);
+  -o-transform: translateZ(32px);
+  transform: translateZ(32px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-34 {
+  -webkit-transform: translateZ(33px);
+  -moz-transform: translateZ(33px);
+  -ms-transform: translateZ(33px);
+  -o-transform: translateZ(33px);
+  transform: translateZ(33px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-35 {
+  -webkit-transform: translateZ(34px);
+  -moz-transform: translateZ(34px);
+  -ms-transform: translateZ(34px);
+  -o-transform: translateZ(34px);
+  transform: translateZ(34px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-36 {
+  -webkit-transform: translateZ(35px);
+  -moz-transform: translateZ(35px);
+  -ms-transform: translateZ(35px);
+  -o-transform: translateZ(35px);
+  transform: translateZ(35px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-37 {
+  -webkit-transform: translateZ(36px);
+  -moz-transform: translateZ(36px);
+  -ms-transform: translateZ(36px);
+  -o-transform: translateZ(36px);
+  transform: translateZ(36px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-38 {
+  -webkit-transform: translateZ(37px);
+  -moz-transform: translateZ(37px);
+  -ms-transform: translateZ(37px);
+  -o-transform: translateZ(37px);
+  transform: translateZ(37px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-39 {
+  -webkit-transform: translateZ(38px);
+  -moz-transform: translateZ(38px);
+  -ms-transform: translateZ(38px);
+  -o-transform: translateZ(38px);
+  transform: translateZ(38px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-40 {
+  -webkit-transform: translateZ(39px);
+  -moz-transform: translateZ(39px);
+  -ms-transform: translateZ(39px);
+  -o-transform: translateZ(39px);
+  transform: translateZ(39px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-41 {
+  -webkit-transform: translateZ(40px);
+  -moz-transform: translateZ(40px);
+  -ms-transform: translateZ(40px);
+  -o-transform: translateZ(40px);
+  transform: translateZ(40px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-42 {
+  -webkit-transform: translateZ(41px);
+  -moz-transform: translateZ(41px);
+  -ms-transform: translateZ(41px);
+  -o-transform: translateZ(41px);
+  transform: translateZ(41px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-43 {
+  -webkit-transform: translateZ(42px);
+  -moz-transform: translateZ(42px);
+  -ms-transform: translateZ(42px);
+  -o-transform: translateZ(42px);
+  transform: translateZ(42px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-44 {
+  -webkit-transform: translateZ(43px);
+  -moz-transform: translateZ(43px);
+  -ms-transform: translateZ(43px);
+  -o-transform: translateZ(43px);
+  transform: translateZ(43px);
+}
+
+/* line 69, ../scss/screen.scss */
+.layer-45 {
+  -webkit-transform: translateZ(44px);
+  -moz-transform: translateZ(44px);
+  -ms-transform: translateZ(44px);
+  -o-transform: translateZ(44px);
+  transform: translateZ(44px);
+}
+
+/* line 72, ../scss/screen.scss */
+.inner-plane-1, .inner-plane-2 {
+  width: 44px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  transform: rotateY(90deg) translateX(-22px);
+  -webkit-transform: rotateY(90deg) translateX(-22px);
+  -moz-transform: rotateY(90deg) translateX(-22px);
+  -ms-transform: rotateY(90deg) translateX(-22px);
+  -o-transform: rotateY(90deg) translateX(-22px);
+  background: cadetblue;
+}
+
+/* line 81, ../scss/screen.scss */
+.inner-plane-2 {
+  left: auto;
+  right: 10px;
+}
+
+@keyframes rotate3d {
+  /* line 88, ../scss/screen.scss */
+  0% {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+
+  /* line 89, ../scss/screen.scss */
+  100% {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@-webkit-keyframes rotate3d {
+  /* line 88, ../scss/screen.scss */
+  0% {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+
+  /* line 89, ../scss/screen.scss */
+  100% {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@-moz-keyframes rotate3d {
+  /* line 88, ../scss/screen.scss */
+  0% {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+
+  /* line 89, ../scss/screen.scss */
+  100% {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@-ms-keyframes rotate3d {
+  /* line 88, ../scss/screen.scss */
+  0% {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+
+  /* line 89, ../scss/screen.scss */
+  100% {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@-o-keyframes rotate3d {
+  /* line 88, ../scss/screen.scss */
+  0% {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+
+  /* line 89, ../scss/screen.scss */
+  100% {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
 }

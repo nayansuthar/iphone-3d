@@ -1,5 +1,8 @@
 @import "compass";
 @import "compass/css3/user-interface";
+@import "mixins";
+
+$x: ""; //for temp use
 
 * {
     margin: 0;
@@ -29,4 +32,59 @@ body {
     left: 0;
     right: 0;
     background-color: #e6e6e6;
+}
+
+.object-wrapper {
+    width: 100%;
+    height: 100%;
+    border: 1px solid gray;
+    @include perspective(1000);
+    @include perspective(1000px);
+    @include transform-origin(50%);
+}
+
+.object {
+    width: 300px;
+    height: 540px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -270px -150px;
+    @include transform-style(preserve-3d);
+    @include animation (rotate3d, 15s);
+}
+
+.layer {
+    width: 100%;
+    height: 100%;
+    @include border-radius(30px);
+    background: cadetblue;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@for $i from 1 through 45 {
+    $x: ($i - 1);
+    .layer-#{$i} { @include translateZ( #{$x}px ) }
+}
+
+.inner-plane-1, .inner-plane-2 {
+    width: 44px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    @include my-transform (rotateY(90deg) translateX(-22px));
+    background: cadetblue;
+}
+.inner-plane-2 {
+    left: auto;
+    right: 10px;
+}
+
+
+@include keyframes(rotate3d) {
+    0% { @include rotateY(0deg)}
+    100% { @include rotateY(360deg)}
 }
