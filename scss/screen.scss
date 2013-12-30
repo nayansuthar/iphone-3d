@@ -24,6 +24,9 @@ body {
     padding: 0 0 200px;
 }
 
+
+
+/*-----LAYOUT-----*/
 .controls-wrapper {
     width: 100%;
     height: 200px;
@@ -33,7 +36,6 @@ body {
     right: 0;
     background-color: #e6e6e6;
 }
-
 .object-wrapper {
     width: 100%;
     height: 100%;
@@ -43,40 +45,72 @@ body {
     @include transform-origin(50%);
 }
 
-.object {
-    width: 300px;
-    height: 540px;
+
+
+/*-----OBJECT-----*/
+.iphone {
+    width: 250px;
+    height: 530px;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin: -270px -150px;
+    margin: -265px -125px;
     @include transform-style(preserve-3d);
     @include animation (rotate3d, 15s);
 }
 
+
+
+/*-----ALL-LAYERS-----*/
 .layer {
     width: 100%;
     height: 100%;
     @include border-radius(30px);
-    background: cadetblue;
+    background: linear-gradient(#535c5f 0%, #535c5f 1.9%,
+                                #cad3d6 2%, #252e31 8%,
+                                #434c4f 50%,
+                                #252e31 92%, #cad3d6 98%,
+                                #535c5f 98.1%, #535c5f 100%);
     position: absolute;
     top: 0;
     left: 0;
 }
-
-@for $i from 1 through 45 {
-    $x: ($i - 1);
+@for $i from 1 through 30 {
+    $x: ($i - 15);
     .layer-#{$i} { @include translateZ( #{$x}px ) }
 }
+@for $i from 1 through 4 {
+    $x: (31 - $i);
+    .layer-#{$i}, .layer-#{$x} {
+        width: 250px - 4 + $i;
+        height: 530px - 4 + $i;
+        top: 2px - $i/2;
+        left: 2px - $i/2;
+    }
+}
 
+
+.layer-1, .layer-30 {
+    background: #000002;
+}
+
+
+/*-----INNER-PLANES-----*/
 .inner-plane-1, .inner-plane-2 {
-    width: 44px;
+    display: none;
+    width: 29px;
     height: 100%;
     position: absolute;
     top: 0;
     left: 10px;
-    @include my-transform (rotateY(90deg) translateX(-22px));
-    background: cadetblue;
+    @include border-radius(5px);
+    @include my-transform (rotateY(90deg));
+    background: linear-gradient(#535c5f 0%, #535c5f 0.09%,
+                                #cad3d6 1.2%, #252e31 8%,
+                                #434c4f 50%,
+                                #252e31 92%, #cad3d6 98%,
+                                #535c5f 98.1%, #535c5f 100%);
+
 }
 .inner-plane-2 {
     left: auto;
@@ -84,6 +118,29 @@ body {
 }
 
 
+/*-----OTHER-PARTS-----*/
+.screen {
+    width: 214px;
+    height: 380px;
+    background: gray;
+    position: absolute;
+    top: 76px;
+    left: 17px;
+}
+.button {
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    bottom: 15px;
+    left: 102px;
+    @include border-radius(50%);
+    background: linear-gradient(#000002 0%, #000002 50%,
+                                #282c31 50%, #686d74 100%);
+    @include box-shadow(0 -1px 0 0 rgba(#fff, 0.4));
+}
+
+
+/*-----ANIMATIONS-----*/
 @include keyframes(rotate3d) {
     0% { @include rotateY(0deg)}
     100% { @include rotateY(360deg)}
