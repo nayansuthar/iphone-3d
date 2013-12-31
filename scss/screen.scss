@@ -22,6 +22,7 @@ html, body {
 
 body {
     padding: 0 0 200px;
+    background-color: #e6e6e6;
 }
 
 
@@ -34,12 +35,10 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #e6e6e6;
 }
 .object-wrapper {
     width: 100%;
     height: 100%;
-    border: 1px solid gray;
     @include perspective(1000);
     @include perspective(1000px);
     @include transform-origin(50%);
@@ -56,7 +55,7 @@ body {
     left: 50%;
     margin: -265px -125px;
     @include transform-style(preserve-3d);
-    @include animation (rotate3d, 15s);
+    @include animation (rotate3d, 10s);
 }
 
 
@@ -65,34 +64,38 @@ body {
 .layer {
     width: 100%;
     height: 100%;
-    @include border-radius(30px);
-    background: linear-gradient(#535c5f 0%, #535c5f 1.9%,
-                                #cad3d6 2%, #252e31 8%,
-                                #434c4f 50%,
-                                #252e31 92%, #cad3d6 98%,
-                                #535c5f 98.1%, #535c5f 100%);
     position: absolute;
     top: 0;
     left: 0;
+    @include border-radius(32px);
+    background: linear-gradient(#030708 0%, #6f7b87 2%,
+                                #313842 10%, #535d69 20%,
+                                #38414a 50%, #262a33 90%,
+                                #6f7b87 98%, #030708 100%);
 }
 @for $i from 1 through 30 {
     $x: ($i - 15);
     .layer-#{$i} { @include translateZ( #{$x}px ) }
 }
 @for $i from 1 through 4 {
-    $x: (31 - $i);
+    $x: (31 - $i - 1);
     .layer-#{$i}, .layer-#{$x} {
         width: 250px - 4 + $i;
         height: 530px - 4 + $i;
         top: 2px - $i/2;
         left: 2px - $i/2;
+        background: linear-gradient(#030708 0%, #adb6c5 1%,
+                                    #050a0e 4%, #050a0e 96%,
+                                    #adb6c5 99%, #030708 100%);
     }
 }
-
-
-.layer-1, .layer-30 {
-    background: #000002;
+.layer-30 {
+    width: 250px - 3;
+    height: 530px - 3;
+    top: 1.5px;
+    left: 1.5px;
 }
+.layer-1, .layer-30 { background: #000002 }
 
 
 /*-----INNER-PLANES-----*/
@@ -105,12 +108,10 @@ body {
     left: 10px;
     @include border-radius(5px);
     @include my-transform (rotateY(90deg));
-    background: linear-gradient(#535c5f 0%, #535c5f 0.09%,
-                                #cad3d6 1.2%, #252e31 8%,
-                                #434c4f 50%,
-                                #252e31 92%, #cad3d6 98%,
-                                #535c5f 98.1%, #535c5f 100%);
-
+    background: linear-gradient(#030708 0%, #6f7b87 2%,
+                                #313842 10%, #535d69 20%,
+                                #38414a 50%, #262a33 90%,
+                                #6f7b87 98%, #030708 100%);
 }
 .inner-plane-2 {
     left: auto;
@@ -120,12 +121,12 @@ body {
 
 /*-----OTHER-PARTS-----*/
 .screen {
-    width: 214px;
+    width: 220px;
     height: 380px;
     background: gray;
     position: absolute;
-    top: 76px;
-    left: 17px;
+    top: 72px;
+    left: 14px;
 }
 .button {
     width: 46px;
@@ -137,8 +138,68 @@ body {
     background: linear-gradient(#000002 0%, #000002 50%,
                                 #282c31 50%, #686d74 100%);
     @include box-shadow(0 -1px 0 0 rgba(#fff, 0.4));
+    &:after {
+        content: "";
+        width: 12px;
+        height: 12px;
+        @include border-radius(3px);
+        border: 2px solid rgba(#fff, 0.6);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -8px;
+    }
+}
+.front-cam {
+    width: 10px;
+    height: 10px;
+    @include border-radius(5px);
+    background: gray;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    margin: 0 -5px;
+}
+.speaker {
+    width: 60px;
+    height: 8px;
+    @include border-radius(5px);
+    background: gray;
+    position: absolute;
+    top: 42px;
+    left: 50%;
+    margin: 0 -30px;
 }
 
+.back-cam {
+    width: 26px;
+    height: 26px;
+    @include border-radius(15px);
+    background: gray;
+    position: absolute;
+    top: 16px;
+    right: 24px;
+}
+
+.back-flash {
+    width: 14px;
+    height: 14px;
+    @include border-radius(15px);
+    background: gray;
+    position: absolute;
+    top: 22px;
+    right: 60px;
+}
+
+
+.back-cover {
+    width: 100%;
+    height: 426px;
+    position: absolute;
+    left: 0;
+    top: #{(530 - 430)/2}px;
+    background: #46505a;
+}
 
 /*-----ANIMATIONS-----*/
 @include keyframes(rotate3d) {
