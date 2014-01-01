@@ -54,7 +54,8 @@ body {
     left: 50%;
     margin: -265px -125px;
     @include transform-style(preserve-3d);
-    @include animation (rotate3d, 20s);
+    @include rotateY(60deg);
+    @include animation (rotate3d, 26s);
 
     //-----Object-Layers
     .layer {
@@ -64,12 +65,18 @@ body {
         top: 0;
         left: 0;
         @include border-radius(32px);
-        background: linear-gradient(#030708 0%, #6f7b87 2%,
-                                    #313842 10%, #535d69 20%,
-                                    #38414a 50%, #262a33 90%,
-                                    #6f7b87 98%, #030708 100%);
+        background: linear-gradient(rgba(#030708, 0.98) 0%, rgba(#6f7b87, 0.98) 2%,
+                                    rgba(#313842, 0.98) 10%, rgba(#535d69, 0.98) 20%,
+                                    rgba(#38414a, 0.98) 50%, rgba(#262a33, 0.98) 90%,
+                                    rgba(#6f7b87, 0.98) 98%, rgba(#030708, 0.98) 100%),
+        url("../images/noise-lines.png");
     }
-    @for $i from 1 through 30 { .layer-#{$i}{@include translateZ($i - 15px)} }
+    @for $i from 1 through 30 {
+        .layer-#{$i}{
+            @include translateZ($i - 15px);
+            background-position: #{$i}px 0;
+        }
+    }
     @for $i from 1 through 4 {
         $x: (31 - $i - 1);
         .layer-#{$i}, .layer-#{$x} {
@@ -88,7 +95,7 @@ body {
         height: 530px - 5;
         top: 2.5px;
         left: 2.5px;
-        border: 2px solid #000;
+        Border: 2px solid #000;
         @include box-shadow(0 0 1px 1px #3b3f43 inset);
     }
     .layer-29 {
@@ -106,6 +113,26 @@ body {
         top: 68px;
         left: 50%;
         margin: 0 -110px;
+    }
+    .glare {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include border-radius(32px);
+        overflow: hidden;
+        &:after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: -120px;
+            left: 140px;
+            background: linear-gradient(#fff 0%, rgba(#fff, 0) 100%);
+            @include opacity(0.28);
+            @include rotate(-18deg);
+        }
     }
     .button {
         width: 46px;
@@ -130,17 +157,18 @@ body {
         }
     }
     .front-cam {
-        width: 10px;
-        height: 10px;
-        @include border-radius(5px);
-        background: linear-gradient(#1c1817 0%, #24292f 100%);
-        border: 1px solid rgba(#fff, 0.02);
+        width: 12px;
+        height: 12px;
+        @include border-radius(10px);
+        background: linear-gradient(#12121d 0%, #12121d 30%, #24292f 100%);
+        border-bottom: 1px solid rgba(#fff, 0.16);
         position: absolute;
-        top: 20px;
+        top: 18px;
         left: 50%;
-        margin: 0 -5px;
-        @include box-shadow (0 0 1px 0 #000 inset);
-        &:after {
+        margin: 0 -6px;
+        @include box-shadow (0 0 0 1px rgba(#fff, 0.1), 0 0 1px 0 rgba(#000, 0.3) inset);
+        @include rotate(-20deg);
+        &:before, &:after {
             content: "";
             width: 4px;
             height: 4px;
@@ -149,18 +177,41 @@ body {
             top: 50%;
             left: 50%;
             margin: -2px;
-            background: #293a68;
+            background: #253c82;
+            @include box-shadow (0 0 2px 2px rgba(#000, 0.3), 0 0 1px 1px rgba(#253c82, 0.4));
+        }
+        &:after {
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            background: rgba(white, 0.2);
+            @include box-shadow (1px 1px 1px 1px rgba(#000, 0.4));
         }
     }
     .speaker {
         width: 60px;
-        height: 8px;
+        height: 10px;
         @include border-radius(5px);
-        background: gray;
+        background: linear-gradient(#12121d 0%, #1c2025 100%);
+        border-bottom: 1px solid rgba(#fff, 0.15);
         position: absolute;
-        top: 42px;
+        top: 40px;
         left: 50%;
         margin: 0 -30px;
+        @include box-shadow (0 0 0 1px rgba(#fff, 0.1), 0 0 1px 0 rgba(#000, 0.3) inset);
+        &:after {
+            content: "";
+            width: 54px;
+            height: 4px;
+            @include border-radius(2px);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -2px -27px;
+            background: url("../images/speaker-texture.png") repeat;
+            @include opacity(0.6);
+            @include box-shadow (0 0 1px 1px rgba(#000, 0.1) inset, 0 0 0 1px rgba(#000, 0.5));
+        }
     }
 
 
@@ -189,7 +240,8 @@ body {
         position: absolute;
         left: 0;
         top: #{(530 - 430)/2}px;
-        background: linear-gradient(#2e373e 0%, #232c35 100%);
+        background: linear-gradient(rgba(#2e373e, 0.985) 0%, rgba(#232c35, 0.985) 100%),
+        url("../images/noise.png");
     }
 }
 
@@ -217,6 +269,7 @@ body {
 
 /*-----ANIMATIONS-----*/
 @include keyframes(rotate3d) {
-    0% { @include rotateY(0deg)}
-    100% { @include rotateY(360deg)}
+    0% { @include my-transform(rotateY(0deg) rotateX(8deg))}
+    50% { @include my-transform(rotateY(360deg) rotateX(-8deg))}
+    100% { @include my-transform(rotateY(720deg) rotateX(8deg))}
 }
