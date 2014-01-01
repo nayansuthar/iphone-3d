@@ -1,9 +1,10 @@
 @import "compass";
 @import "compass/css3/user-interface";
 @import "mixins";
-
 $x: ""; //for temp use
 
+
+//-----BASIC-RESET
 * {
     margin: 0;
     padding: 0;
@@ -12,14 +13,12 @@ $x: ""; //for temp use
     font-family: calibri, arial;
     @include user-select(none);
 }
-
 html, body {
     width: 100%;
     height: 100%;
     overflow: hidden;
     background-color: #eee;
 }
-
 body {
     padding: 0 0 200px;
     background-color: #e6e6e6;
@@ -27,7 +26,7 @@ body {
 
 
 
-/*-----LAYOUT-----*/
+//-----LAYOUT
 .controls-wrapper {
     width: 100%;
     height: 200px;
@@ -46,7 +45,7 @@ body {
 
 
 
-/*-----OBJECT-----*/
+//-----OBJECT
 .iphone {
     width: 250px;
     height: 530px;
@@ -55,47 +54,144 @@ body {
     left: 50%;
     margin: -265px -125px;
     @include transform-style(preserve-3d);
-    @include animation (rotate3d, 10s);
-}
+    @include animation (rotate3d, 20s);
+
+    //-----Object-Layers
+    .layer {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include border-radius(32px);
+        background: linear-gradient(#030708 0%, #6f7b87 2%,
+                                    #313842 10%, #535d69 20%,
+                                    #38414a 50%, #262a33 90%,
+                                    #6f7b87 98%, #030708 100%);
+    }
+    @for $i from 1 through 30 { .layer-#{$i}{@include translateZ($i - 15px)} }
+    @for $i from 1 through 4 {
+        $x: (31 - $i - 1);
+        .layer-#{$i}, .layer-#{$x} {
+            width: 250px - 4 + $i;
+            height: 530px - 4 + $i;
+            top: 2px - $i/2;
+            left: 2px - $i/2;
+            background: linear-gradient(#030708 0%, #adb6c5 1%,
+                                        #050a0e 4%, #050a0e 96%,
+                                        #adb6c5 99%, #030708 100%);
+        }
+    }
+    .layer-1, .layer-30 { background: #000002 }
+    .layer-30 {
+        width: 250px - 5;
+        height: 530px - 5;
+        top: 2.5px;
+        left: 2.5px;
+        border: 2px solid #000;
+        @include box-shadow(0 0 1px 1px #3b3f43 inset);
+    }
+    .layer-29 {
+        border: 1px solid #545b63;
+        border-top: 1px solid #6a6f75;
+    }
 
 
+    //-----Object-Front-Elements
+    .screen {
+        width: 220px;
+        height: 380px;
+        background: gray;
+        position: absolute;
+        top: 68px;
+        left: 50%;
+        margin: 0 -110px;
+    }
+    .button {
+        width: 46px;
+        height: 46px;
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        margin: 0 -23px;
+        @include border-radius(50%);
+        background: linear-gradient(#000002 0%, #000002 50%, #282c31 50%, #686d74 100%);
+        @include box-shadow(0 -1px 0 0 rgba(#fff, 0.4));
+        &:after {
+            content: "";
+            width: 12px;
+            height: 12px;
+            @include border-radius(3px);
+            border: 2px solid rgba(#fff, 0.6);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -8px;
+        }
+    }
+    .front-cam {
+        width: 10px;
+        height: 10px;
+        @include border-radius(5px);
+        background: linear-gradient(#1c1817 0%, #24292f 100%);
+        border: 1px solid rgba(#fff, 0.02);
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        margin: 0 -5px;
+        @include box-shadow (0 0 1px 0 #000 inset);
+        &:after {
+            content: "";
+            width: 4px;
+            height: 4px;
+            @include border-radius(2px);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -2px;
+            background: #293a68;
+        }
+    }
+    .speaker {
+        width: 60px;
+        height: 8px;
+        @include border-radius(5px);
+        background: gray;
+        position: absolute;
+        top: 42px;
+        left: 50%;
+        margin: 0 -30px;
+    }
 
-/*-----ALL-LAYERS-----*/
-.layer {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    @include border-radius(32px);
-    background: linear-gradient(#030708 0%, #6f7b87 2%,
-                                #313842 10%, #535d69 20%,
-                                #38414a 50%, #262a33 90%,
-                                #6f7b87 98%, #030708 100%);
-}
-@for $i from 1 through 30 {
-    $x: ($i - 15);
-    .layer-#{$i} { @include translateZ( #{$x}px ) }
-}
-@for $i from 1 through 4 {
-    $x: (31 - $i - 1);
-    .layer-#{$i}, .layer-#{$x} {
-        width: 250px - 4 + $i;
-        height: 530px - 4 + $i;
-        top: 2px - $i/2;
-        left: 2px - $i/2;
-        background: linear-gradient(#030708 0%, #adb6c5 1%,
-                                    #050a0e 4%, #050a0e 96%,
-                                    #adb6c5 99%, #030708 100%);
+
+    //-----Object-Back-Elements
+    .back-cam {
+        width: 26px;
+        height: 26px;
+        @include border-radius(15px);
+        background: gray;
+        position: absolute;
+        top: 16px;
+        right: 24px;
+    }
+    .back-flash {
+        width: 14px;
+        height: 14px;
+        @include border-radius(15px);
+        background: gray;
+        position: absolute;
+        top: 22px;
+        right: 60px;
+    }
+    .back-cover {
+        width: 100%;
+        height: 426px;
+        position: absolute;
+        left: 0;
+        top: #{(530 - 430)/2}px;
+        background: linear-gradient(#2e373e 0%, #232c35 100%);
     }
 }
-.layer-30 {
-    width: 250px - 3;
-    height: 530px - 3;
-    top: 1.5px;
-    left: 1.5px;
-}
-.layer-1, .layer-30 { background: #000002 }
 
 
 /*-----INNER-PLANES-----*/
@@ -118,88 +214,6 @@ body {
     right: 10px;
 }
 
-
-/*-----OTHER-PARTS-----*/
-.screen {
-    width: 220px;
-    height: 380px;
-    background: gray;
-    position: absolute;
-    top: 72px;
-    left: 14px;
-}
-.button {
-    width: 46px;
-    height: 46px;
-    position: absolute;
-    bottom: 15px;
-    left: 102px;
-    @include border-radius(50%);
-    background: linear-gradient(#000002 0%, #000002 50%,
-                                #282c31 50%, #686d74 100%);
-    @include box-shadow(0 -1px 0 0 rgba(#fff, 0.4));
-    &:after {
-        content: "";
-        width: 12px;
-        height: 12px;
-        @include border-radius(3px);
-        border: 2px solid rgba(#fff, 0.6);
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin: -8px;
-    }
-}
-.front-cam {
-    width: 10px;
-    height: 10px;
-    @include border-radius(5px);
-    background: gray;
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    margin: 0 -5px;
-}
-.speaker {
-    width: 60px;
-    height: 8px;
-    @include border-radius(5px);
-    background: gray;
-    position: absolute;
-    top: 42px;
-    left: 50%;
-    margin: 0 -30px;
-}
-
-.back-cam {
-    width: 26px;
-    height: 26px;
-    @include border-radius(15px);
-    background: gray;
-    position: absolute;
-    top: 16px;
-    right: 24px;
-}
-
-.back-flash {
-    width: 14px;
-    height: 14px;
-    @include border-radius(15px);
-    background: gray;
-    position: absolute;
-    top: 22px;
-    right: 60px;
-}
-
-
-.back-cover {
-    width: 100%;
-    height: 426px;
-    position: absolute;
-    left: 0;
-    top: #{(530 - 430)/2}px;
-    background: #46505a;
-}
 
 /*-----ANIMATIONS-----*/
 @include keyframes(rotate3d) {
