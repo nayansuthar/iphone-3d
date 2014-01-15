@@ -54,8 +54,8 @@ body {
     left: 50%;
     margin: -265px -125px;
     @include transform-style(preserve-3d);
-    @include rotateY(60deg);
-    @include animation (rotate3d, 26s);
+    @include rotateY(180deg);
+    /* @include animation (rotate3d, 26s); */
 
     //-----Object-Layers
     .layer {
@@ -220,11 +220,67 @@ body {
         width: 26px;
         height: 26px;
         @include border-radius(15px);
-        background: gray;
+        background: linear-gradient(#252e37 25%, #595f67 50%, #252e37 75%);
         position: absolute;
         top: 16px;
         right: 24px;
+        @include rotate(120deg);
+        &:before, &:after {
+            content: "";
+            width: 14px;
+            height: 14px;
+            @include border-radius(50%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -7px;
+            background: #313c43;
+            @include box-shadow (0 0 0 1px #141517);
+        }
+        &:before {
+            width: 20px;
+            height: 20px;
+            margin: -10px;
+            background: linear-gradient(#0d0908 0%, #2c3031 100%);
+            @include rotate(-90deg);
+            @include box-shadow (-1px 0 0 0 rgba(white, 0.15), 1px 0 0 0 rgba(white, 0.1));
+        }
     }
+    .back-cam-inner {
+        width: 8px;
+        height: 8px;
+        @include border-radius(10px);
+        background: #194969;
+        position: absolute;
+        top: 9px;
+        left: 9px;
+        z-index: 999;
+        @include box-shadow (1px 0 0 0 rgba(#fff, 0.1), -1px 0 0 0 rgba(#000, 0.3));
+        @include rotate(-20deg);
+        &:before {
+            content: "";
+            width: 0;
+            height: 0;
+            @include border-radius(50%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: 4px solid transparent;
+            border-left-color: #29658b;
+            border-right-color: #2d6a92;
+        }
+        &:after {
+            content: "";
+            width: 1px;
+            height: 1px;
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            background: rgba(white, 0.2);
+            @include box-shadow (1px 1px 1px 1px rgba(#000, 0.4));
+        }
+    }
+
     .back-flash {
         width: 14px;
         height: 14px;
