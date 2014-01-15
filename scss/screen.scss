@@ -282,13 +282,42 @@ body {
     }
 
     .back-flash {
-        width: 14px;
-        height: 14px;
+        width: 16px;
+        height: 16px;
         @include border-radius(15px);
-        background: gray;
+        background: linear-gradient(#41494a 0%, #687173 50%, #687173 60%, #41494a 100%);
+        @include rotate(-35deg);
         position: absolute;
-        top: 22px;
+        top: 21px;
         right: 60px;
+        &:before {
+            content: "";
+            width: 0;
+            height: 0;
+            @include border-radius(50%);
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            border: 6px solid #cac9b5;
+            border-left-color: #adaa9b;
+            border-right-color: #adaa9b;
+            @include box-shadow(0 0 1px 1px rgba(#000, 0.8));
+            @include rotate(35deg);
+        }
+        &:after {
+            content: "";
+            width: 6px;
+            height: 3px;
+            @include border-radius(50%);
+            @include rotate(35deg);
+            position: absolute;
+            top: 6px;
+            left: 5px;
+            background: rgba(#b1afa2, 0.6);
+            @include box-shadow(0 0 2px 1px #b1afa2,
+                                0 2px 1px 0 rgba(#fff, 0.7),
+                                0 -2px 1px 0 rgba(#fff, 0.7));
+        }
     }
     .back-cover {
         width: 100%;
