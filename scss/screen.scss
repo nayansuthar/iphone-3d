@@ -54,7 +54,7 @@ body {
     left: 50%;
     margin: -265px -125px;
     @include transform-style(preserve-3d);
-    @include rotateX(-60deg);
+    @include rotateY(80deg);
     /* @include animation (rotate3d, 26s); */
 
     //-----Object-Layers
@@ -360,6 +360,55 @@ body {
     border: 1px solid #434d57;
 }
 
+
+.volume-up-1, .volume-up-2, .volume-up-3, .volume-up-4,
+.volume-down-1, .volume-down-2, .volume-down-3, .volume-down-4 {
+    width: 14px;
+    height: 14px;
+    background: linear-gradient(rgba(#434d57, 0.99) 0%, rgba(#434d57, 0.99) 100%),
+    url("../images/noise.png");
+    border: 1px solid lighten(#434d57, 1.8%);
+    @include border-radius(7px);
+    position: absolute;
+    top: 150px;
+    left: -7px;
+    @include my-transform(rotateY(90deg));
+}
+.volume-up-1, .volume-down-1 {
+    @include box-shadow(0 0 0 1px #111924);
+    border-bottom: 1px solid #99a3af;
+    border-top: 1px solid #99a3af;
+}
+.volume-up-2, .volume-down-2 { left: -7.5px }
+.volume-up-3, .volume-down-3 { left: -8px }
+.volume-up-4, .volume-down-4 {
+    width: 12px;
+    height: 12px;
+    left: -8.5px;
+    top: 151px;
+    background: linear-gradient(rgba(#3f4752, 0.985) 0%, rgba(#3f4752, 0.985) 100%),
+    url("../images/noise.png");
+    border: 1px solid #434d57;
+    &:after {
+        content: "+";
+        color: #646d78;
+        font-size: 16px;
+        position: absolute;
+        top: -5px;
+        left: 1px;
+        @include text-shadow(0 0 1px rgba(#000, 0.3));
+    }
+}
+.volume-down-1, .volume-down-2, .volume-down-3, .volume-down-4 {
+    top: 190px;
+}
+.volume-down-4 {
+    top: 191px;
+    &:after {
+        content: "_";
+        top: -12px
+    }
+}
 
 /*-----INNER-PLANES-----*/
 .inner-plane-1, .inner-plane-2 {
