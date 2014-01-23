@@ -54,7 +54,7 @@ body {
     left: 50%;
     margin: -265px -125px;
     @include transform-style(preserve-3d);
-    @include rotateY(80deg);
+    @include rotateY(20deg);
     /* @include animation (rotate3d, 26s); */
 
     //-----Object-Layers
@@ -359,6 +359,52 @@ body {
     url("../images/noise.png");
     border: 1px solid #434d57;
 }
+
+
+.mute-button-1, .mute-button-2, .mute-button-3, .mute-button-4 {
+    background: linear-gradient(rgba(#434d57, 0.99) 0%, rgba(#434d57, 0.99) 100%),
+    url("../images/noise.png");
+    border: 1px solid lighten(#434d57, 1.8%);
+    @include border-radius(2px);
+    position: absolute;
+    top: 100px;
+    left: -6px;
+    @include my-transform(rotateY(90deg) translateX(-2px));
+}
+.mute-button-1 {
+    width: 10px;
+    height: 22px;
+    top: 99px;
+    background: linear-gradient(rgba(#424a54, 0.99) 0%, rgba(#424a54, 0.99) 100%),
+    url("../images/noise.png");
+    @include box-shadow(0 0 1px 0 rgba(#111924, 0.5) inset);
+    border: none;
+    border-left: 1px solid rgba(#111924, 0.7);
+    @include my-transform(rotateY(90deg));
+}
+.mute-button-2 {
+    width: 4px;
+    height: 20px;
+    left: -3px;
+    border-left: 1px solid #99a3af;
+    border-top: 1px solid #99a3af;
+    @include box-shadow(1px 0 0 0 rgba(#111924, 0.5));
+}
+.mute-button-3 {
+    width: 4px;
+    height: 20px;
+    left: -3.5px;
+}
+.mute-button-4 {
+    width: 2px;
+    height: 18px;
+    left: -3.5px;
+    top: 101px;
+    background: linear-gradient(rgba(#3f4752, 0.985) 0%, rgba(#3f4752, 0.985) 100%),
+    url("../images/noise.png");
+    border: 1px solid #434d57;
+}
+
 
 
 .volume-up-1, .volume-up-2, .volume-up-3, .volume-up-4,
