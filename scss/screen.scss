@@ -54,7 +54,7 @@ body {
     left: 50%;
     margin: -265px -125px;
     @include transform-style(preserve-3d);
-    @include rotateY(20deg);
+    @include rotateY(180deg);
     /* @include animation (rotate3d, 26s); */
 
     //-----Object-Layers
@@ -320,6 +320,16 @@ body {
                                 0 -2px 1px 0 rgba(#fff, 0.7));
         }
     }
+    .back-screw {
+        width: 4px;
+        height: 3px;
+        @include border-radius(50%);
+        background: #202020;
+        position: absolute;
+        top: 28px;
+        right: 53px;
+        @include box-shadow(0 0 1px 0 rgba(#000, 0.6) inset);
+    }
     .back-cover {
         width: 100%;
         height: 426px;
@@ -328,6 +338,28 @@ body {
         top: #{(530 - 430)/2}px;
         background: linear-gradient(rgba(#2e373e, 0.985) 0%, rgba(#232c35, 0.985) 100%),
         url("../images/noise.png");
+    }
+    .iphone-label {
+        width: 100%;
+        position: absolute;
+        top: 350px;
+        left: 0;
+        color: #5b646d;
+        font-size: 24px;
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: -1px;
+        @include rotateY(180deg);
+    }
+    .iphone-text {
+        width: 100%;
+        position: absolute;
+        top: 386px;
+        left: 0;
+        color: #171e26;
+        font-size: 6px;
+        text-align: center;
+        @include rotateY(180deg);
     }
 }
 

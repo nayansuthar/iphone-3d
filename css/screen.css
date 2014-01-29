@@ -70,11 +70,11 @@ body {
   -ms-transform-style: preserve-3d;
   -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  -webkit-transform: rotateY(20deg);
-  -moz-transform: rotateY(20deg);
-  -ms-transform: rotateY(20deg);
-  -o-transform: rotateY(20deg);
-  transform: rotateY(20deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
   /* @include animation (rotate3d, 26s); */
 }
 /* line 61, ../scss/screen.scss */
@@ -755,6 +755,23 @@ body {
   box-shadow: 0 0 2px 1px #b1afa2, 0 2px 1px 0 rgba(255, 255, 255, 0.7), 0 -2px 1px 0 rgba(255, 255, 255, 0.7);
 }
 /* line 323, ../scss/screen.scss */
+.iphone .back-screw {
+  width: 4px;
+  height: 3px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background: #202020;
+  position: absolute;
+  top: 28px;
+  right: 53px;
+  -webkit-box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.6) inset;
+  -moz-box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.6) inset;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.6) inset;
+}
+/* line 333, ../scss/screen.scss */
 .iphone .back-cover {
   width: 100%;
   height: 426px;
@@ -763,8 +780,40 @@ body {
   top: 50px;
   background: linear-gradient(rgba(46, 55, 62, 0.985) 0%, rgba(35, 44, 53, 0.985) 100%), url("../images/noise.png");
 }
+/* line 342, ../scss/screen.scss */
+.iphone .iphone-label {
+  width: 100%;
+  position: absolute;
+  top: 350px;
+  left: 0;
+  color: #5b646d;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: -1px;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+/* line 354, ../scss/screen.scss */
+.iphone .iphone-text {
+  width: 100%;
+  position: absolute;
+  top: 386px;
+  left: 0;
+  color: #171e26;
+  font-size: 6px;
+  text-align: center;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
 
-/* line 334, ../scss/screen.scss */
+/* line 366, ../scss/screen.scss */
 .power-button-1, .power-button-2, .power-button-3, .power-button-4 {
   width: 40px;
   height: 8px;
@@ -785,7 +834,7 @@ body {
   -o-transform: rotateX(90deg);
 }
 
-/* line 346, ../scss/screen.scss */
+/* line 378, ../scss/screen.scss */
 .power-button-1 {
   -webkit-box-shadow: 0 0 1px 0 #232d39;
   -moz-box-shadow: 0 0 1px 0 #232d39;
@@ -794,17 +843,17 @@ body {
   border-top: 1px solid #99a3af;
 }
 
-/* line 351, ../scss/screen.scss */
+/* line 383, ../scss/screen.scss */
 .power-button-2 {
   top: -5.5px;
 }
 
-/* line 352, ../scss/screen.scss */
+/* line 384, ../scss/screen.scss */
 .power-button-3 {
   top: -6px;
 }
 
-/* line 353, ../scss/screen.scss */
+/* line 385, ../scss/screen.scss */
 .power-button-4 {
   width: 38px;
   height: 6px;
@@ -814,7 +863,7 @@ body {
   border: 1px solid #434d57;
 }
 
-/* line 364, ../scss/screen.scss */
+/* line 396, ../scss/screen.scss */
 .mute-button-1, .mute-button-2, .mute-button-3, .mute-button-4 {
   background: linear-gradient(rgba(67, 77, 87, 0.99) 0%, rgba(67, 77, 87, 0.99) 100%), url("../images/noise.png");
   border: 1px solid #47525c;
@@ -833,7 +882,7 @@ body {
   -o-transform: rotateY(90deg) translateX(-2px);
 }
 
-/* line 374, ../scss/screen.scss */
+/* line 406, ../scss/screen.scss */
 .mute-button-1 {
   width: 10px;
   height: 22px;
@@ -851,7 +900,7 @@ body {
   -o-transform: rotateY(90deg);
 }
 
-/* line 385, ../scss/screen.scss */
+/* line 417, ../scss/screen.scss */
 .mute-button-2 {
   width: 4px;
   height: 20px;
@@ -863,14 +912,14 @@ body {
   box-shadow: 1px 0 0 0 rgba(17, 25, 36, 0.5);
 }
 
-/* line 393, ../scss/screen.scss */
+/* line 425, ../scss/screen.scss */
 .mute-button-3 {
   width: 4px;
   height: 20px;
   left: -3.5px;
 }
 
-/* line 398, ../scss/screen.scss */
+/* line 430, ../scss/screen.scss */
 .mute-button-4 {
   width: 2px;
   height: 18px;
@@ -880,7 +929,7 @@ body {
   border: 1px solid #434d57;
 }
 
-/* line 411, ../scss/screen.scss */
+/* line 443, ../scss/screen.scss */
 .volume-up-1, .volume-up-2, .volume-up-3, .volume-up-4,
 .volume-down-1, .volume-down-2, .volume-down-3, .volume-down-4 {
   width: 14px;
@@ -902,7 +951,7 @@ body {
   -o-transform: rotateY(90deg);
 }
 
-/* line 423, ../scss/screen.scss */
+/* line 455, ../scss/screen.scss */
 .volume-up-1, .volume-down-1 {
   -webkit-box-shadow: 0 0 0 1px #111924;
   -moz-box-shadow: 0 0 0 1px #111924;
@@ -911,17 +960,17 @@ body {
   border-top: 1px solid #99a3af;
 }
 
-/* line 428, ../scss/screen.scss */
+/* line 460, ../scss/screen.scss */
 .volume-up-2, .volume-down-2 {
   left: -7.5px;
 }
 
-/* line 429, ../scss/screen.scss */
+/* line 461, ../scss/screen.scss */
 .volume-up-3, .volume-down-3 {
   left: -8px;
 }
 
-/* line 430, ../scss/screen.scss */
+/* line 462, ../scss/screen.scss */
 .volume-up-4, .volume-down-4 {
   width: 12px;
   height: 12px;
@@ -930,7 +979,7 @@ body {
   background: linear-gradient(rgba(63, 71, 82, 0.985) 0%, rgba(63, 71, 82, 0.985) 100%), url("../images/noise.png");
   border: 1px solid #434d57;
 }
-/* line 438, ../scss/screen.scss */
+/* line 470, ../scss/screen.scss */
 .volume-up-4:after, .volume-down-4:after {
   content: "+";
   color: #646d78;
@@ -941,23 +990,23 @@ body {
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
 }
 
-/* line 448, ../scss/screen.scss */
+/* line 480, ../scss/screen.scss */
 .volume-down-1, .volume-down-2, .volume-down-3, .volume-down-4 {
   top: 190px;
 }
 
-/* line 451, ../scss/screen.scss */
+/* line 483, ../scss/screen.scss */
 .volume-down-4 {
   top: 191px;
 }
-/* line 453, ../scss/screen.scss */
+/* line 485, ../scss/screen.scss */
 .volume-down-4:after {
   content: "_";
   top: -12px;
 }
 
 /*-----INNER-PLANES-----*/
-/* line 460, ../scss/screen.scss */
+/* line 492, ../scss/screen.scss */
 .inner-plane-1, .inner-plane-2 {
   display: none;
   width: 29px;
@@ -978,7 +1027,7 @@ body {
   background: linear-gradient(#030708 0%, #6f7b87 2%, #313842 10%, #535d69 20%, #38414a 50%, #262a33 90%, #6f7b87 98%, #030708 100%);
 }
 
-/* line 474, ../scss/screen.scss */
+/* line 506, ../scss/screen.scss */
 .inner-plane-2 {
   left: auto;
   right: 10px;
@@ -986,7 +1035,7 @@ body {
 
 /*-----ANIMATIONS-----*/
 @keyframes rotate3d {
-  /* line 482, ../scss/screen.scss */
+  /* line 514, ../scss/screen.scss */
   0% {
     transform: rotateY(0deg) rotateX(8deg);
     -webkit-transform: rotateY(0deg) rotateX(8deg);
@@ -995,7 +1044,7 @@ body {
     -o-transform: rotateY(0deg) rotateX(8deg);
   }
 
-  /* line 483, ../scss/screen.scss */
+  /* line 515, ../scss/screen.scss */
   50% {
     transform: rotateY(360deg) rotateX(-8deg);
     -webkit-transform: rotateY(360deg) rotateX(-8deg);
@@ -1004,7 +1053,7 @@ body {
     -o-transform: rotateY(360deg) rotateX(-8deg);
   }
 
-  /* line 484, ../scss/screen.scss */
+  /* line 516, ../scss/screen.scss */
   100% {
     transform: rotateY(720deg) rotateX(8deg);
     -webkit-transform: rotateY(720deg) rotateX(8deg);
@@ -1015,7 +1064,7 @@ body {
 }
 
 @-webkit-keyframes rotate3d {
-  /* line 482, ../scss/screen.scss */
+  /* line 514, ../scss/screen.scss */
   0% {
     transform: rotateY(0deg) rotateX(8deg);
     -webkit-transform: rotateY(0deg) rotateX(8deg);
@@ -1024,7 +1073,7 @@ body {
     -o-transform: rotateY(0deg) rotateX(8deg);
   }
 
-  /* line 483, ../scss/screen.scss */
+  /* line 515, ../scss/screen.scss */
   50% {
     transform: rotateY(360deg) rotateX(-8deg);
     -webkit-transform: rotateY(360deg) rotateX(-8deg);
@@ -1033,7 +1082,7 @@ body {
     -o-transform: rotateY(360deg) rotateX(-8deg);
   }
 
-  /* line 484, ../scss/screen.scss */
+  /* line 516, ../scss/screen.scss */
   100% {
     transform: rotateY(720deg) rotateX(8deg);
     -webkit-transform: rotateY(720deg) rotateX(8deg);
@@ -1044,7 +1093,7 @@ body {
 }
 
 @-moz-keyframes rotate3d {
-  /* line 482, ../scss/screen.scss */
+  /* line 514, ../scss/screen.scss */
   0% {
     transform: rotateY(0deg) rotateX(8deg);
     -webkit-transform: rotateY(0deg) rotateX(8deg);
@@ -1053,7 +1102,7 @@ body {
     -o-transform: rotateY(0deg) rotateX(8deg);
   }
 
-  /* line 483, ../scss/screen.scss */
+  /* line 515, ../scss/screen.scss */
   50% {
     transform: rotateY(360deg) rotateX(-8deg);
     -webkit-transform: rotateY(360deg) rotateX(-8deg);
@@ -1062,7 +1111,7 @@ body {
     -o-transform: rotateY(360deg) rotateX(-8deg);
   }
 
-  /* line 484, ../scss/screen.scss */
+  /* line 516, ../scss/screen.scss */
   100% {
     transform: rotateY(720deg) rotateX(8deg);
     -webkit-transform: rotateY(720deg) rotateX(8deg);
@@ -1073,7 +1122,7 @@ body {
 }
 
 @-ms-keyframes rotate3d {
-  /* line 482, ../scss/screen.scss */
+  /* line 514, ../scss/screen.scss */
   0% {
     transform: rotateY(0deg) rotateX(8deg);
     -webkit-transform: rotateY(0deg) rotateX(8deg);
@@ -1082,7 +1131,7 @@ body {
     -o-transform: rotateY(0deg) rotateX(8deg);
   }
 
-  /* line 483, ../scss/screen.scss */
+  /* line 515, ../scss/screen.scss */
   50% {
     transform: rotateY(360deg) rotateX(-8deg);
     -webkit-transform: rotateY(360deg) rotateX(-8deg);
@@ -1091,7 +1140,7 @@ body {
     -o-transform: rotateY(360deg) rotateX(-8deg);
   }
 
-  /* line 484, ../scss/screen.scss */
+  /* line 516, ../scss/screen.scss */
   100% {
     transform: rotateY(720deg) rotateX(8deg);
     -webkit-transform: rotateY(720deg) rotateX(8deg);
@@ -1102,7 +1151,7 @@ body {
 }
 
 @-o-keyframes rotate3d {
-  /* line 482, ../scss/screen.scss */
+  /* line 514, ../scss/screen.scss */
   0% {
     transform: rotateY(0deg) rotateX(8deg);
     -webkit-transform: rotateY(0deg) rotateX(8deg);
@@ -1111,7 +1160,7 @@ body {
     -o-transform: rotateY(0deg) rotateX(8deg);
   }
 
-  /* line 483, ../scss/screen.scss */
+  /* line 515, ../scss/screen.scss */
   50% {
     transform: rotateY(360deg) rotateX(-8deg);
     -webkit-transform: rotateY(360deg) rotateX(-8deg);
@@ -1120,7 +1169,7 @@ body {
     -o-transform: rotateY(360deg) rotateX(-8deg);
   }
 
-  /* line 484, ../scss/screen.scss */
+  /* line 516, ../scss/screen.scss */
   100% {
     transform: rotateY(720deg) rotateX(8deg);
     -webkit-transform: rotateY(720deg) rotateX(8deg);
