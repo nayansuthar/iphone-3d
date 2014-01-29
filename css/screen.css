@@ -70,12 +70,12 @@ body {
   -ms-transform-style: preserve-3d;
   -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  -ms-transform: rotateY(180deg);
-  -o-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-  /* @include animation (rotate3d, 26s); */
+  -webkit-transform: rotateY(120deg);
+  -moz-transform: rotateY(120deg);
+  -ms-transform: rotateY(120deg);
+  -o-transform: rotateY(120deg);
+  transform: rotateY(120deg);
+  /* @include animation (rotate3d, 12s); */
 }
 /* line 61, ../scss/screen.scss */
 .iphone .layer {
@@ -1005,8 +1005,35 @@ body {
   top: -12px;
 }
 
-/*-----INNER-PLANES-----*/
 /* line 492, ../scss/screen.scss */
+.side-line-1, .side-line-2, .side-line-3, .side-line-4 {
+  width: 21px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  top: 52px;
+  left: -10px;
+  transform: rotateY(90deg);
+  -webkit-transform: rotateY(90deg);
+  -moz-transform: rotateY(90deg);
+  -ms-transform: rotateY(90deg);
+  -o-transform: rotateY(90deg);
+}
+
+/* line 501, ../scss/screen.scss */
+.side-line-3, .side-line-4 {
+  left: auto;
+  right: -10px;
+}
+
+/* line 502, ../scss/screen.scss */
+.side-line-2, .side-line-4 {
+  top: auto;
+  bottom: 52px;
+}
+
+/*-----INNER-PLANES-----*/
+/* line 507, ../scss/screen.scss */
 .inner-plane-1, .inner-plane-2 {
   display: none;
   width: 29px;
@@ -1027,7 +1054,7 @@ body {
   background: linear-gradient(#030708 0%, #6f7b87 2%, #313842 10%, #535d69 20%, #38414a 50%, #262a33 90%, #6f7b87 98%, #030708 100%);
 }
 
-/* line 506, ../scss/screen.scss */
+/* line 521, ../scss/screen.scss */
 .inner-plane-2 {
   left: auto;
   right: 10px;
@@ -1035,7 +1062,7 @@ body {
 
 /*-----ANIMATIONS-----*/
 @keyframes rotate3d {
-  /* line 514, ../scss/screen.scss */
+  /* line 529, ../scss/screen.scss */
   0% {
     transform: rotateY(0deg) rotateX(8deg);
     -webkit-transform: rotateY(0deg) rotateX(8deg);
@@ -1044,7 +1071,7 @@ body {
     -o-transform: rotateY(0deg) rotateX(8deg);
   }
 
-  /* line 515, ../scss/screen.scss */
+  /* line 530, ../scss/screen.scss */
   50% {
     transform: rotateY(360deg) rotateX(-8deg);
     -webkit-transform: rotateY(360deg) rotateX(-8deg);
@@ -1053,7 +1080,7 @@ body {
     -o-transform: rotateY(360deg) rotateX(-8deg);
   }
 
-  /* line 516, ../scss/screen.scss */
+  /* line 531, ../scss/screen.scss */
   100% {
     transform: rotateY(720deg) rotateX(8deg);
     -webkit-transform: rotateY(720deg) rotateX(8deg);
@@ -1064,7 +1091,7 @@ body {
 }
 
 @-webkit-keyframes rotate3d {
-  /* line 514, ../scss/screen.scss */
+  /* line 529, ../scss/screen.scss */
   0% {
     transform: rotateY(0deg) rotateX(8deg);
     -webkit-transform: rotateY(0deg) rotateX(8deg);
@@ -1073,7 +1100,7 @@ body {
     -o-transform: rotateY(0deg) rotateX(8deg);
   }
 
-  /* line 515, ../scss/screen.scss */
+  /* line 530, ../scss/screen.scss */
   50% {
     transform: rotateY(360deg) rotateX(-8deg);
     -webkit-transform: rotateY(360deg) rotateX(-8deg);
@@ -1082,7 +1109,7 @@ body {
     -o-transform: rotateY(360deg) rotateX(-8deg);
   }
 
-  /* line 516, ../scss/screen.scss */
+  /* line 531, ../scss/screen.scss */
   100% {
     transform: rotateY(720deg) rotateX(8deg);
     -webkit-transform: rotateY(720deg) rotateX(8deg);
@@ -1093,7 +1120,7 @@ body {
 }
 
 @-moz-keyframes rotate3d {
-  /* line 514, ../scss/screen.scss */
+  /* line 529, ../scss/screen.scss */
   0% {
     transform: rotateY(0deg) rotateX(8deg);
     -webkit-transform: rotateY(0deg) rotateX(8deg);
@@ -1102,7 +1129,7 @@ body {
     -o-transform: rotateY(0deg) rotateX(8deg);
   }
 
-  /* line 515, ../scss/screen.scss */
+  /* line 530, ../scss/screen.scss */
   50% {
     transform: rotateY(360deg) rotateX(-8deg);
     -webkit-transform: rotateY(360deg) rotateX(-8deg);
@@ -1111,7 +1138,7 @@ body {
     -o-transform: rotateY(360deg) rotateX(-8deg);
   }
 
-  /* line 516, ../scss/screen.scss */
+  /* line 531, ../scss/screen.scss */
   100% {
     transform: rotateY(720deg) rotateX(8deg);
     -webkit-transform: rotateY(720deg) rotateX(8deg);
@@ -1122,7 +1149,7 @@ body {
 }
 
 @-ms-keyframes rotate3d {
-  /* line 514, ../scss/screen.scss */
+  /* line 529, ../scss/screen.scss */
   0% {
     transform: rotateY(0deg) rotateX(8deg);
     -webkit-transform: rotateY(0deg) rotateX(8deg);
@@ -1131,7 +1158,7 @@ body {
     -o-transform: rotateY(0deg) rotateX(8deg);
   }
 
-  /* line 515, ../scss/screen.scss */
+  /* line 530, ../scss/screen.scss */
   50% {
     transform: rotateY(360deg) rotateX(-8deg);
     -webkit-transform: rotateY(360deg) rotateX(-8deg);
@@ -1140,7 +1167,7 @@ body {
     -o-transform: rotateY(360deg) rotateX(-8deg);
   }
 
-  /* line 516, ../scss/screen.scss */
+  /* line 531, ../scss/screen.scss */
   100% {
     transform: rotateY(720deg) rotateX(8deg);
     -webkit-transform: rotateY(720deg) rotateX(8deg);
@@ -1151,7 +1178,7 @@ body {
 }
 
 @-o-keyframes rotate3d {
-  /* line 514, ../scss/screen.scss */
+  /* line 529, ../scss/screen.scss */
   0% {
     transform: rotateY(0deg) rotateX(8deg);
     -webkit-transform: rotateY(0deg) rotateX(8deg);
@@ -1160,7 +1187,7 @@ body {
     -o-transform: rotateY(0deg) rotateX(8deg);
   }
 
-  /* line 515, ../scss/screen.scss */
+  /* line 530, ../scss/screen.scss */
   50% {
     transform: rotateY(360deg) rotateX(-8deg);
     -webkit-transform: rotateY(360deg) rotateX(-8deg);
@@ -1169,7 +1196,7 @@ body {
     -o-transform: rotateY(360deg) rotateX(-8deg);
   }
 
-  /* line 516, ../scss/screen.scss */
+  /* line 531, ../scss/screen.scss */
   100% {
     transform: rotateY(720deg) rotateX(8deg);
     -webkit-transform: rotateY(720deg) rotateX(8deg);

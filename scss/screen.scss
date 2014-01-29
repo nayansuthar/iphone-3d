@@ -54,8 +54,8 @@ body {
     left: 50%;
     margin: -265px -125px;
     @include transform-style(preserve-3d);
-    @include rotateY(180deg);
-    /* @include animation (rotate3d, 26s); */
+    @include rotateY(120deg);
+    /* @include animation (rotate3d, 12s); */
 
     //-----Object-Layers
     .layer {
@@ -487,6 +487,21 @@ body {
         top: -12px
     }
 }
+
+
+.side-line-1, .side-line-2, .side-line-3, .side-line-4 {
+    width: 21px;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    top: 52px;
+    left: -10px;
+    @include my-transform(rotateY(90deg));
+}
+.side-line-3, .side-line-4 { left: auto; right: -10px }
+.side-line-2, .side-line-4 { top: auto; bottom: 52px }
+
+
 
 /*-----INNER-PLANES-----*/
 .inner-plane-1, .inner-plane-2 {
