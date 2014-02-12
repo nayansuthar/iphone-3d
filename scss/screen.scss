@@ -54,7 +54,7 @@ body {
     left: 50%;
     margin: -265px -125px;
     @include transform-style(preserve-3d);
-    @include rotateX(80deg);
+    @include rotateY(180deg);
     /* @include animation (rotate3d, 12s); */
 
     //-----Object-Layers
@@ -607,6 +607,14 @@ body {
 }
 .bottom-screw-2 { left: auto; right: 97px }
 
+
+.logo {
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    margin: 0 -25px;
+    @include my-transform(rotateY(180deg));
+}
 
 
 

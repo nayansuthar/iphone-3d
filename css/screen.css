@@ -70,11 +70,11 @@ body {
   -ms-transform-style: preserve-3d;
   -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  -webkit-transform: rotateX(80deg);
-  -moz-transform: rotateX(80deg);
-  -ms-transform: rotateX(80deg);
-  -o-transform: rotateX(80deg);
-  transform: rotateX(80deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
   /* @include animation (rotate3d, 12s); */
 }
 /* line 61, ../scss/screen.scss */
@@ -1413,9 +1413,22 @@ body {
   right: 97px;
 }
 
+/* line 611, ../scss/screen.scss */
+.logo {
+  position: absolute;
+  top: 110px;
+  left: 50%;
+  margin: 0 -25px;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+
 /*-----ANIMATIONS-----*/
 @keyframes rotate3d {
-  /* line 615, ../scss/screen.scss */
+  /* line 623, ../scss/screen.scss */
   0% {
     transform: rotateY(0deg) rotateX(80deg);
     -webkit-transform: rotateY(0deg) rotateX(80deg);
@@ -1424,7 +1437,7 @@ body {
     -o-transform: rotateY(0deg) rotateX(80deg);
   }
 
-  /* line 616, ../scss/screen.scss */
+  /* line 624, ../scss/screen.scss */
   50% {
     transform: rotateY(360deg) rotateX(-80deg);
     -webkit-transform: rotateY(360deg) rotateX(-80deg);
@@ -1433,7 +1446,7 @@ body {
     -o-transform: rotateY(360deg) rotateX(-80deg);
   }
 
-  /* line 617, ../scss/screen.scss */
+  /* line 625, ../scss/screen.scss */
   100% {
     transform: rotateY(720deg) rotateX(80deg);
     -webkit-transform: rotateY(720deg) rotateX(80deg);
@@ -1444,7 +1457,7 @@ body {
 }
 
 @-webkit-keyframes rotate3d {
-  /* line 615, ../scss/screen.scss */
+  /* line 623, ../scss/screen.scss */
   0% {
     transform: rotateY(0deg) rotateX(80deg);
     -webkit-transform: rotateY(0deg) rotateX(80deg);
@@ -1453,7 +1466,7 @@ body {
     -o-transform: rotateY(0deg) rotateX(80deg);
   }
 
-  /* line 616, ../scss/screen.scss */
+  /* line 624, ../scss/screen.scss */
   50% {
     transform: rotateY(360deg) rotateX(-80deg);
     -webkit-transform: rotateY(360deg) rotateX(-80deg);
@@ -1462,7 +1475,7 @@ body {
     -o-transform: rotateY(360deg) rotateX(-80deg);
   }
 
-  /* line 617, ../scss/screen.scss */
+  /* line 625, ../scss/screen.scss */
   100% {
     transform: rotateY(720deg) rotateX(80deg);
     -webkit-transform: rotateY(720deg) rotateX(80deg);
@@ -1473,7 +1486,7 @@ body {
 }
 
 @-moz-keyframes rotate3d {
-  /* line 615, ../scss/screen.scss */
+  /* line 623, ../scss/screen.scss */
   0% {
     transform: rotateY(0deg) rotateX(80deg);
     -webkit-transform: rotateY(0deg) rotateX(80deg);
@@ -1482,7 +1495,7 @@ body {
     -o-transform: rotateY(0deg) rotateX(80deg);
   }
 
-  /* line 616, ../scss/screen.scss */
+  /* line 624, ../scss/screen.scss */
   50% {
     transform: rotateY(360deg) rotateX(-80deg);
     -webkit-transform: rotateY(360deg) rotateX(-80deg);
@@ -1491,7 +1504,7 @@ body {
     -o-transform: rotateY(360deg) rotateX(-80deg);
   }
 
-  /* line 617, ../scss/screen.scss */
+  /* line 625, ../scss/screen.scss */
   100% {
     transform: rotateY(720deg) rotateX(80deg);
     -webkit-transform: rotateY(720deg) rotateX(80deg);
@@ -1502,7 +1515,7 @@ body {
 }
 
 @-ms-keyframes rotate3d {
-  /* line 615, ../scss/screen.scss */
+  /* line 623, ../scss/screen.scss */
   0% {
     transform: rotateY(0deg) rotateX(80deg);
     -webkit-transform: rotateY(0deg) rotateX(80deg);
@@ -1511,7 +1524,7 @@ body {
     -o-transform: rotateY(0deg) rotateX(80deg);
   }
 
-  /* line 616, ../scss/screen.scss */
+  /* line 624, ../scss/screen.scss */
   50% {
     transform: rotateY(360deg) rotateX(-80deg);
     -webkit-transform: rotateY(360deg) rotateX(-80deg);
@@ -1520,7 +1533,7 @@ body {
     -o-transform: rotateY(360deg) rotateX(-80deg);
   }
 
-  /* line 617, ../scss/screen.scss */
+  /* line 625, ../scss/screen.scss */
   100% {
     transform: rotateY(720deg) rotateX(80deg);
     -webkit-transform: rotateY(720deg) rotateX(80deg);
@@ -1531,7 +1544,7 @@ body {
 }
 
 @-o-keyframes rotate3d {
-  /* line 615, ../scss/screen.scss */
+  /* line 623, ../scss/screen.scss */
   0% {
     transform: rotateY(0deg) rotateX(80deg);
     -webkit-transform: rotateY(0deg) rotateX(80deg);
@@ -1540,7 +1553,7 @@ body {
     -o-transform: rotateY(0deg) rotateX(80deg);
   }
 
-  /* line 616, ../scss/screen.scss */
+  /* line 624, ../scss/screen.scss */
   50% {
     transform: rotateY(360deg) rotateX(-80deg);
     -webkit-transform: rotateY(360deg) rotateX(-80deg);
@@ -1549,7 +1562,7 @@ body {
     -o-transform: rotateY(360deg) rotateX(-80deg);
   }
 
-  /* line 617, ../scss/screen.scss */
+  /* line 625, ../scss/screen.scss */
   100% {
     transform: rotateY(720deg) rotateX(80deg);
     -webkit-transform: rotateY(720deg) rotateX(80deg);
