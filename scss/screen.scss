@@ -54,7 +54,7 @@ body {
     left: 50%;
     margin: -265px -125px;
     @include transform-style(preserve-3d);
-    @include rotateY(120deg);
+    @include rotateX(80deg);
     /* @include animation (rotate3d, 12s); */
 
     //-----Object-Layers
@@ -69,7 +69,8 @@ body {
                                     rgba(#6f7b87, 0.98) 3%,
                                     rgba(#313842, 0.98) 10%, rgba(#535d69, 0.98) 20%,
                                     rgba(#38414a, 0.98) 50%, rgba(#262a33, 0.98) 90%,
-                                    rgba(#6f7b87, 0.98) 98%, rgba(#030708, 0.98) 100%),
+                                    rgba(#6f7b87, 0.98) 97%, rgba(#030708, 0.98) 99%,
+                                    rgba(#030708, 0.98) 99%, rgba(#3f4752, 0.98) 100%),
         url("../images/noise-lines.png");
     }
     @for $i from 1 through 30 {
@@ -524,9 +525,94 @@ body {
 }
 
 
+.audio-op {
+    width: 14px;
+    height: 14px;
+    background: #111;
+    @include box-shadow (1px 0 0 #1b252f, -1px 0 0 lighten(#4e525e, 28%),
+                         0 0 0 1px #4e525e, 0 0 0 2px #1b252f,
+                         0 0 0 1px #4e525e inset);
+    @include border-radius(10px);
+    position: absolute;
+    bottom: -4px;
+    left: 38px;
+    @include my-transform(rotateX(90deg) rotateZ(-30deg));
+}
+
+.charger-socket {
+    width: 34px;
+    height: 7px;
+    background: #111;
+    @include box-shadow (1px 0 0 #1b252f, -1px 0 0 lighten(#4e525e, 18%),
+                         0 1px 0 lighten(#4e525e, 18%), 0 -1px 0 lighten(#4e525e, 18%),
+                         0 0 0 1px #4e525e, 0 0 0 2px #1b252f,
+                         0 0 0 1px #4e525e inset);
+    @include border-radius(10px);
+    position: absolute;
+    bottom: -3px;
+    left: 108px;
+    @include my-transform(rotateX(90deg) translateY(0.5px));
+}
+
+.bottom-speaker {
+    width: 4px;
+    height: 4px;
+    background: #111;
+    @include box-shadow (0 -1px 0 lighten(#4e525e, 10%));
+    @include border-radius(10px);
+    position: absolute;
+    bottom: -3px;
+}
+.bs-1 { left: 60px; @include my-transform(rotateX(90deg) translateY(5px)) }
+.bs-2 { left: 67px; @include my-transform(rotateX(90deg) translateY(5px)) }
+.bs-3 { left: 74px; @include my-transform(rotateX(90deg) translateY(5px)) }
+.bs-4 { left: 81px; @include my-transform(rotateX(90deg) translateY(5px)) }
+.bs-5 { left: 88px; @include my-transform(rotateX(90deg) translateY(5px)) }
+.bs-6 { left: 60px; @include my-transform(rotateX(90deg) translateY(-2px)) }
+.bs-7 { left: 67px; @include my-transform(rotateX(90deg) translateY(-2px)) }
+.bs-8 { left: 74px; @include my-transform(rotateX(90deg) translateY(-2px)) }
+.bs-9 { left: 81px; @include my-transform(rotateX(90deg) translateY(-2px)) }
+.bs-10 { left: 88px; @include my-transform(rotateX(90deg) translateY(-2px)) }
+
+.bs-11 { left: 159px; @include my-transform(rotateX(90deg) translateY(5px)) }
+.bs-12 { left: 166px; @include my-transform(rotateX(90deg) translateY(5px)) }
+.bs-13 { left: 173px; @include my-transform(rotateX(90deg) translateY(5px)) }
+.bs-14 { left: 180px; @include my-transform(rotateX(90deg) translateY(5px)) }
+.bs-15 { left: 187px; @include my-transform(rotateX(90deg) translateY(5px)) }
+.bs-16 { left: 194px; @include my-transform(rotateX(90deg) translateY(5px)) }
+.bs-17 { left: 201px; @include my-transform(rotateX(90deg) translateY(5px)) }
+.bs-18 { left: 208px; @include my-transform(rotateX(90deg) translateY(5px)) }
+.bs-19 { left: 159px; @include my-transform(rotateX(90deg) translateY(-2px)) }
+.bs-20 { left: 166px; @include my-transform(rotateX(90deg) translateY(-2px)) }
+.bs-21 { left: 173px; @include my-transform(rotateX(90deg) translateY(-2px)) }
+.bs-22 { left: 180px; @include my-transform(rotateX(90deg) translateY(-2px)) }
+.bs-23 { left: 187px; @include my-transform(rotateX(90deg) translateY(-2px)) }
+.bs-24 { left: 194px; @include my-transform(rotateX(90deg) translateY(-2px)) }
+.bs-25 { left: 201px; @include my-transform(rotateX(90deg) translateY(-2px)) }
+.bs-26 { left: 208px; @include my-transform(rotateX(90deg) translateY(-2px)) }
+
+.bottom-screw-1, .bottom-screw-2 {
+    width: 5px;
+    height: 5px;
+    background: #111;
+    border: 2px solid lighten(#4e525e, 6%);
+    border-top: 2px solid lighten(#4e525e, 18%);
+    border-bottom: 2px solid lighten(#4e525e, 18%);
+    /* @include box-shadow (0 -1px 0 lighten(#4e525e, 10%)); */
+    @include border-radius(10px);
+    position: absolute;
+    bottom: -3px;
+    left: 97px;
+    @include my-transform(rotateX(90deg) translateY(0.5px));
+}
+.bottom-screw-2 { left: auto; right: 97px }
+
+
+
+
 /*-----ANIMATIONS-----*/
 @include keyframes(rotate3d) {
-    0% { @include my-transform(rotateY(0deg) rotateX(8deg))}
-    50% { @include my-transform(rotateY(360deg) rotateX(-8deg))}
-    100% { @include my-transform(rotateY(720deg) rotateX(8deg))}
+    0% { @include my-transform(rotateY(0deg) rotateX(80deg))}
+    50% { @include my-transform(rotateY(360deg) rotateX(-80deg))}
+    100% { @include my-transform(rotateY(720deg) rotateX(80deg))}
 }
