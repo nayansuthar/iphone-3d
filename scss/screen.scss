@@ -59,7 +59,7 @@ body {
     margin: -265px -125px;
     @include transform-style(preserve-3d);
     @include rotateY(60deg);
-    /* @include animation (rotate3d, 24s); */
+    @include animation (rotate3d, 36s);
 
     //-----Object-Layers
     .layer {
@@ -362,8 +362,8 @@ body {
 }
 .power-button-1 {
     @include box-shadow(0 0 1px 0 #232d39);
-    border-bottom: 1px solid #99a3af;
-    border-top: 1px solid #99a3af;
+    border-bottom: 1px solid darken(#99a3af, 16%);
+    border-top: 1px solid darken(#99a3af, 16%);
 }
 .power-button-2 { top: -5.5px }
 .power-button-3 { top: -6px }
@@ -490,13 +490,13 @@ body {
 
 /*-----INNER-PLANES-----*/
 .inner-plane-1, .inner-plane-2 {
-    display: none;
-    width: 29px;
+    width: 24px;
     height: 100%;
     position: absolute;
     top: 0;
-    left: 10px;
+    left: 12px;
     @include border-radius(5px);
+    @include opacity(0.4);
     @include my-transform (rotateY(90deg));
     background: linear-gradient(#030708 0%, #6f7b87 2%,
                                 #313842 10%, #535d69 20%,
@@ -505,7 +505,7 @@ body {
 }
 .inner-plane-2 {
     left: auto;
-    right: 10px;
+    right: 12px;
 }
 
 
