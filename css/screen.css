@@ -818,8 +818,8 @@ body {
 .iphone .power-button-1, .iphone .power-button-2, .iphone .power-button-3, .iphone .power-button-4 {
   width: 40px;
   height: 8px;
-  background: linear-gradient(rgba(67, 77, 87, 0.99) 0%, rgba(67, 77, 87, 0.99) 100%), url("../images/noise.png");
-  border: 1px solid #47525c;
+  background: #3b424c;
+  border: 1px solid #48515e;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -834,34 +834,34 @@ body {
   -ms-transform: rotateX(90deg);
   -o-transform: rotateX(90deg);
 }
-/* line 391, ../scss/screen.scss */
+/* line 390, ../scss/screen.scss */
 .iphone .power-button-1 {
-  -webkit-box-shadow: 0 0 1px 0 #232d39;
-  -moz-box-shadow: 0 0 1px 0 #232d39;
-  box-shadow: 0 0 1px 0 #232d39;
+  -webkit-box-shadow: 0 0 1px 0 draken(#232d39, 8%);
+  -moz-box-shadow: 0 0 1px 0 draken(#232d39, 8%);
+  box-shadow: 0 0 1px 0 draken(#232d39, 8%);
   border-bottom: 1px solid #6c7a8a;
   border-top: 1px solid #6c7a8a;
 }
-/* line 396, ../scss/screen.scss */
+/* line 395, ../scss/screen.scss */
 .iphone .power-button-2 {
   top: -5.5px;
 }
-/* line 397, ../scss/screen.scss */
+/* line 396, ../scss/screen.scss */
 .iphone .power-button-3 {
   top: -6px;
 }
-/* line 398, ../scss/screen.scss */
+/* line 397, ../scss/screen.scss */
 .iphone .power-button-4 {
   width: 38px;
   height: 6px;
   top: -6.5px;
   right: 41px;
-  background: linear-gradient(rgba(63, 71, 82, 0.985) 0%, rgba(63, 71, 82, 0.985) 100%), url("../images/noise.png");
+  background: #3b424c;
   border: 1px solid #434d57;
 }
-/* line 409, ../scss/screen.scss */
+/* line 407, ../scss/screen.scss */
 .iphone .mute-button-1, .iphone .mute-button-2, .iphone .mute-button-3, .iphone .mute-button-4 {
-  background: linear-gradient(rgba(67, 77, 87, 0.99) 0%, rgba(67, 77, 87, 0.99) 100%), url("../images/noise.png");
+  background: #434d57;
   border: 1px solid #47525c;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -877,12 +877,12 @@ body {
   -ms-transform: rotateY(90deg) translateX(-2px);
   -o-transform: rotateY(90deg) translateX(-2px);
 }
-/* line 419, ../scss/screen.scss */
+/* line 416, ../scss/screen.scss */
 .iphone .mute-button-1 {
   width: 10px;
   height: 22px;
   top: 99px;
-  background: linear-gradient(rgba(66, 74, 84, 0.99) 0%, rgba(66, 74, 84, 0.99) 100%), url("../images/noise.png");
+  background: #313841;
   -webkit-box-shadow: 0 0 1px 0 rgba(17, 25, 36, 0.5) inset;
   -moz-box-shadow: 0 0 1px 0 rgba(17, 25, 36, 0.5) inset;
   box-shadow: 0 0 1px 0 rgba(17, 25, 36, 0.5) inset;
@@ -894,7 +894,7 @@ body {
   -ms-transform: rotateY(90deg);
   -o-transform: rotateY(90deg);
 }
-/* line 430, ../scss/screen.scss */
+/* line 426, ../scss/screen.scss */
 .iphone .mute-button-2 {
   width: 4px;
   height: 20px;
@@ -905,27 +905,27 @@ body {
   -moz-box-shadow: 1px 0 0 0 rgba(17, 25, 36, 0.5);
   box-shadow: 1px 0 0 0 rgba(17, 25, 36, 0.5);
 }
-/* line 438, ../scss/screen.scss */
+/* line 434, ../scss/screen.scss */
 .iphone .mute-button-3 {
   width: 4px;
   height: 20px;
   left: -3.5px;
 }
-/* line 443, ../scss/screen.scss */
+/* line 439, ../scss/screen.scss */
 .iphone .mute-button-4 {
   width: 2px;
   height: 18px;
   left: -3.5px;
   top: 101px;
-  background: linear-gradient(rgba(63, 71, 82, 0.985) 0%, rgba(63, 71, 82, 0.985) 100%), url("../images/noise.png");
+  background: #3f4752;
   border: 1px solid #434d57;
 }
-/* line 456, ../scss/screen.scss */
+/* line 448, ../scss/screen.scss */
 .iphone .volume-up-1, .iphone .volume-up-2, .iphone .volume-up-3, .iphone .volume-up-4,
 .iphone .volume-down-1, .iphone .volume-down-2, .iphone .volume-down-3, .iphone .volume-down-4 {
   width: 14px;
   height: 14px;
-  background: linear-gradient(rgba(67, 77, 87, 0.99) 0%, rgba(67, 77, 87, 0.99) 100%), url("../images/noise.png");
+  background: #434d57;
   border: 1px solid #47525c;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
@@ -941,7 +941,7 @@ body {
   -ms-transform: rotateY(90deg);
   -o-transform: rotateY(90deg);
 }
-/* line 468, ../scss/screen.scss */
+/* line 459, ../scss/screen.scss */
 .iphone .volume-up-1, .iphone .volume-down-1 {
   -webkit-box-shadow: 0 0 0 1px #111924;
   -moz-box-shadow: 0 0 0 1px #111924;
@@ -949,24 +949,24 @@ body {
   border-bottom: 1px solid #99a3af;
   border-top: 1px solid #99a3af;
 }
-/* line 473, ../scss/screen.scss */
+/* line 464, ../scss/screen.scss */
 .iphone .volume-up-2, .iphone .volume-down-2 {
   left: -7.5px;
 }
-/* line 474, ../scss/screen.scss */
+/* line 465, ../scss/screen.scss */
 .iphone .volume-up-3, .iphone .volume-down-3 {
   left: -8px;
 }
-/* line 475, ../scss/screen.scss */
+/* line 466, ../scss/screen.scss */
 .iphone .volume-up-4, .iphone .volume-down-4 {
   width: 12px;
   height: 12px;
   left: -8.5px;
   top: 151px;
-  background: linear-gradient(rgba(63, 71, 82, 0.985) 0%, rgba(63, 71, 82, 0.985) 100%), url("../images/noise.png");
+  background: #3f4752;
   border: 1px solid #434d57;
 }
-/* line 483, ../scss/screen.scss */
+/* line 473, ../scss/screen.scss */
 .iphone .volume-up-4:after, .iphone .volume-down-4:after {
   content: "+";
   color: #646d78;
@@ -976,20 +976,20 @@ body {
   left: 1px;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
 }
-/* line 493, ../scss/screen.scss */
+/* line 483, ../scss/screen.scss */
 .iphone .volume-down-1, .iphone .volume-down-2, .iphone .volume-down-3, .iphone .volume-down-4 {
   top: 190px;
 }
-/* line 496, ../scss/screen.scss */
+/* line 486, ../scss/screen.scss */
 .iphone .volume-down-4 {
   top: 191px;
 }
-/* line 498, ../scss/screen.scss */
+/* line 488, ../scss/screen.scss */
 .iphone .volume-down-4:after {
   content: "_";
   top: -12px;
 }
-/* line 505, ../scss/screen.scss */
+/* line 495, ../scss/screen.scss */
 .iphone .side-line-1, .iphone .side-line-2, .iphone .side-line-3, .iphone .side-line-4 {
   width: 21px;
   height: 2px;
@@ -1003,17 +1003,17 @@ body {
   -ms-transform: rotateY(90deg);
   -o-transform: rotateY(90deg);
 }
-/* line 514, ../scss/screen.scss */
+/* line 504, ../scss/screen.scss */
 .iphone .side-line-3, .iphone .side-line-4 {
   left: auto;
   right: -10px;
 }
-/* line 515, ../scss/screen.scss */
+/* line 505, ../scss/screen.scss */
 .iphone .side-line-2, .iphone .side-line-4 {
   top: auto;
   bottom: 52px;
 }
-/* line 520, ../scss/screen.scss */
+/* line 510, ../scss/screen.scss */
 .iphone .inner-plane-1, .iphone .inner-plane-2 {
   width: 24px;
   height: 100%;
@@ -1034,12 +1034,12 @@ body {
   -o-transform: rotateY(90deg);
   background: linear-gradient(#030708 0%, #6f7b87 2%, #313842 10%, #535d69 20%, #38414a 50%, #262a33 90%, #6f7b87 98%, #030708 100%);
 }
-/* line 534, ../scss/screen.scss */
+/* line 524, ../scss/screen.scss */
 .iphone .inner-plane-2 {
   left: auto;
   right: 12px;
 }
-/* line 540, ../scss/screen.scss */
+/* line 530, ../scss/screen.scss */
 .iphone .audio-op {
   width: 14px;
   height: 14px;
@@ -1061,7 +1061,7 @@ body {
   -ms-transform: rotateX(90deg) rotateZ(-30deg);
   -o-transform: rotateX(90deg) rotateZ(-30deg);
 }
-/* line 554, ../scss/screen.scss */
+/* line 544, ../scss/screen.scss */
 .iphone .charger-socket {
   width: 34px;
   height: 7px;
@@ -1083,7 +1083,7 @@ body {
   -ms-transform: rotateX(90deg) translateY(0.5px);
   -o-transform: rotateX(90deg) translateY(0.5px);
 }
-/* line 569, ../scss/screen.scss */
+/* line 559, ../scss/screen.scss */
 .iphone .bottom-speaker {
   width: 4px;
   height: 4px;
@@ -1099,7 +1099,7 @@ body {
   position: absolute;
   bottom: -3px;
 }
-/* line 578, ../scss/screen.scss */
+/* line 568, ../scss/screen.scss */
 .iphone .bs-1 {
   left: 60px;
   transform: rotateX(90deg) translateY(5px);
@@ -1108,7 +1108,7 @@ body {
   -ms-transform: rotateX(90deg) translateY(5px);
   -o-transform: rotateX(90deg) translateY(5px);
 }
-/* line 579, ../scss/screen.scss */
+/* line 569, ../scss/screen.scss */
 .iphone .bs-2 {
   left: 67px;
   transform: rotateX(90deg) translateY(5px);
@@ -1117,7 +1117,7 @@ body {
   -ms-transform: rotateX(90deg) translateY(5px);
   -o-transform: rotateX(90deg) translateY(5px);
 }
-/* line 580, ../scss/screen.scss */
+/* line 570, ../scss/screen.scss */
 .iphone .bs-3 {
   left: 74px;
   transform: rotateX(90deg) translateY(5px);
@@ -1126,7 +1126,7 @@ body {
   -ms-transform: rotateX(90deg) translateY(5px);
   -o-transform: rotateX(90deg) translateY(5px);
 }
-/* line 581, ../scss/screen.scss */
+/* line 571, ../scss/screen.scss */
 .iphone .bs-4 {
   left: 81px;
   transform: rotateX(90deg) translateY(5px);
@@ -1135,7 +1135,7 @@ body {
   -ms-transform: rotateX(90deg) translateY(5px);
   -o-transform: rotateX(90deg) translateY(5px);
 }
-/* line 582, ../scss/screen.scss */
+/* line 572, ../scss/screen.scss */
 .iphone .bs-5 {
   left: 88px;
   transform: rotateX(90deg) translateY(5px);
@@ -1144,7 +1144,7 @@ body {
   -ms-transform: rotateX(90deg) translateY(5px);
   -o-transform: rotateX(90deg) translateY(5px);
 }
-/* line 583, ../scss/screen.scss */
+/* line 573, ../scss/screen.scss */
 .iphone .bs-6 {
   left: 60px;
   transform: rotateX(90deg) translateY(-2px);
@@ -1153,7 +1153,7 @@ body {
   -ms-transform: rotateX(90deg) translateY(-2px);
   -o-transform: rotateX(90deg) translateY(-2px);
 }
-/* line 584, ../scss/screen.scss */
+/* line 574, ../scss/screen.scss */
 .iphone .bs-7 {
   left: 67px;
   transform: rotateX(90deg) translateY(-2px);
@@ -1162,7 +1162,7 @@ body {
   -ms-transform: rotateX(90deg) translateY(-2px);
   -o-transform: rotateX(90deg) translateY(-2px);
 }
-/* line 585, ../scss/screen.scss */
+/* line 575, ../scss/screen.scss */
 .iphone .bs-8 {
   left: 74px;
   transform: rotateX(90deg) translateY(-2px);
@@ -1171,7 +1171,7 @@ body {
   -ms-transform: rotateX(90deg) translateY(-2px);
   -o-transform: rotateX(90deg) translateY(-2px);
 }
-/* line 586, ../scss/screen.scss */
+/* line 576, ../scss/screen.scss */
 .iphone .bs-9 {
   left: 81px;
   transform: rotateX(90deg) translateY(-2px);
@@ -1180,7 +1180,7 @@ body {
   -ms-transform: rotateX(90deg) translateY(-2px);
   -o-transform: rotateX(90deg) translateY(-2px);
 }
-/* line 587, ../scss/screen.scss */
+/* line 577, ../scss/screen.scss */
 .iphone .bs-10 {
   left: 88px;
   transform: rotateX(90deg) translateY(-2px);
@@ -1189,7 +1189,7 @@ body {
   -ms-transform: rotateX(90deg) translateY(-2px);
   -o-transform: rotateX(90deg) translateY(-2px);
 }
-/* line 589, ../scss/screen.scss */
+/* line 579, ../scss/screen.scss */
 .iphone .bs-11 {
   left: 159px;
   transform: rotateX(90deg) translateY(5px);
@@ -1198,7 +1198,7 @@ body {
   -ms-transform: rotateX(90deg) translateY(5px);
   -o-transform: rotateX(90deg) translateY(5px);
 }
-/* line 590, ../scss/screen.scss */
+/* line 580, ../scss/screen.scss */
 .iphone .bs-12 {
   left: 166px;
   transform: rotateX(90deg) translateY(5px);
@@ -1207,7 +1207,7 @@ body {
   -ms-transform: rotateX(90deg) translateY(5px);
   -o-transform: rotateX(90deg) translateY(5px);
 }
-/* line 591, ../scss/screen.scss */
+/* line 581, ../scss/screen.scss */
 .iphone .bs-13 {
   left: 173px;
   transform: rotateX(90deg) translateY(5px);
@@ -1216,7 +1216,7 @@ body {
   -ms-transform: rotateX(90deg) translateY(5px);
   -o-transform: rotateX(90deg) translateY(5px);
 }
-/* line 592, ../scss/screen.scss */
+/* line 582, ../scss/screen.scss */
 .iphone .bs-14 {
   left: 180px;
   transform: rotateX(90deg) translateY(5px);
@@ -1225,7 +1225,7 @@ body {
   -ms-transform: rotateX(90deg) translateY(5px);
   -o-transform: rotateX(90deg) translateY(5px);
 }
-/* line 593, ../scss/screen.scss */
+/* line 583, ../scss/screen.scss */
 .iphone .bs-15 {
   left: 187px;
   transform: rotateX(90deg) translateY(5px);
@@ -1234,7 +1234,7 @@ body {
   -ms-transform: rotateX(90deg) translateY(5px);
   -o-transform: rotateX(90deg) translateY(5px);
 }
-/* line 594, ../scss/screen.scss */
+/* line 584, ../scss/screen.scss */
 .iphone .bs-16 {
   left: 194px;
   transform: rotateX(90deg) translateY(5px);
@@ -1243,7 +1243,7 @@ body {
   -ms-transform: rotateX(90deg) translateY(5px);
   -o-transform: rotateX(90deg) translateY(5px);
 }
-/* line 595, ../scss/screen.scss */
+/* line 585, ../scss/screen.scss */
 .iphone .bs-17 {
   left: 201px;
   transform: rotateX(90deg) translateY(5px);
@@ -1252,7 +1252,7 @@ body {
   -ms-transform: rotateX(90deg) translateY(5px);
   -o-transform: rotateX(90deg) translateY(5px);
 }
-/* line 596, ../scss/screen.scss */
+/* line 586, ../scss/screen.scss */
 .iphone .bs-18 {
   left: 208px;
   transform: rotateX(90deg) translateY(5px);
@@ -1261,7 +1261,7 @@ body {
   -ms-transform: rotateX(90deg) translateY(5px);
   -o-transform: rotateX(90deg) translateY(5px);
 }
-/* line 597, ../scss/screen.scss */
+/* line 587, ../scss/screen.scss */
 .iphone .bs-19 {
   left: 159px;
   transform: rotateX(90deg) translateY(-2px);
@@ -1270,7 +1270,7 @@ body {
   -ms-transform: rotateX(90deg) translateY(-2px);
   -o-transform: rotateX(90deg) translateY(-2px);
 }
-/* line 598, ../scss/screen.scss */
+/* line 588, ../scss/screen.scss */
 .iphone .bs-20 {
   left: 166px;
   transform: rotateX(90deg) translateY(-2px);
@@ -1279,7 +1279,7 @@ body {
   -ms-transform: rotateX(90deg) translateY(-2px);
   -o-transform: rotateX(90deg) translateY(-2px);
 }
-/* line 599, ../scss/screen.scss */
+/* line 589, ../scss/screen.scss */
 .iphone .bs-21 {
   left: 173px;
   transform: rotateX(90deg) translateY(-2px);
@@ -1288,7 +1288,7 @@ body {
   -ms-transform: rotateX(90deg) translateY(-2px);
   -o-transform: rotateX(90deg) translateY(-2px);
 }
-/* line 600, ../scss/screen.scss */
+/* line 590, ../scss/screen.scss */
 .iphone .bs-22 {
   left: 180px;
   transform: rotateX(90deg) translateY(-2px);
@@ -1297,7 +1297,7 @@ body {
   -ms-transform: rotateX(90deg) translateY(-2px);
   -o-transform: rotateX(90deg) translateY(-2px);
 }
-/* line 601, ../scss/screen.scss */
+/* line 591, ../scss/screen.scss */
 .iphone .bs-23 {
   left: 187px;
   transform: rotateX(90deg) translateY(-2px);
@@ -1306,7 +1306,7 @@ body {
   -ms-transform: rotateX(90deg) translateY(-2px);
   -o-transform: rotateX(90deg) translateY(-2px);
 }
-/* line 602, ../scss/screen.scss */
+/* line 592, ../scss/screen.scss */
 .iphone .bs-24 {
   left: 194px;
   transform: rotateX(90deg) translateY(-2px);
@@ -1315,7 +1315,7 @@ body {
   -ms-transform: rotateX(90deg) translateY(-2px);
   -o-transform: rotateX(90deg) translateY(-2px);
 }
-/* line 603, ../scss/screen.scss */
+/* line 593, ../scss/screen.scss */
 .iphone .bs-25 {
   left: 201px;
   transform: rotateX(90deg) translateY(-2px);
@@ -1324,7 +1324,7 @@ body {
   -ms-transform: rotateX(90deg) translateY(-2px);
   -o-transform: rotateX(90deg) translateY(-2px);
 }
-/* line 604, ../scss/screen.scss */
+/* line 594, ../scss/screen.scss */
 .iphone .bs-26 {
   left: 208px;
   transform: rotateX(90deg) translateY(-2px);
@@ -1333,7 +1333,7 @@ body {
   -ms-transform: rotateX(90deg) translateY(-2px);
   -o-transform: rotateX(90deg) translateY(-2px);
 }
-/* line 606, ../scss/screen.scss */
+/* line 596, ../scss/screen.scss */
 .iphone .bottom-screw-1, .iphone .bottom-screw-2 {
   width: 5px;
   height: 5px;
@@ -1356,12 +1356,12 @@ body {
   -ms-transform: rotateX(90deg) translateY(0.5px);
   -o-transform: rotateX(90deg) translateY(0.5px);
 }
-/* line 620, ../scss/screen.scss */
+/* line 610, ../scss/screen.scss */
 .iphone .bottom-screw-2 {
   left: auto;
   right: 97px;
 }
-/* line 623, ../scss/screen.scss */
+/* line 613, ../scss/screen.scss */
 .iphone .logo {
   position: absolute;
   top: 110px;
@@ -1376,7 +1376,7 @@ body {
 
 /*-----ANIMATIONS-----*/
 @keyframes rotate3d {
-  /* line 635, ../scss/screen.scss */
+  /* line 625, ../scss/screen.scss */
   0% {
     transform: rotateY(0deg) rotateX(60deg);
     -webkit-transform: rotateY(0deg) rotateX(60deg);
@@ -1385,7 +1385,7 @@ body {
     -o-transform: rotateY(0deg) rotateX(60deg);
   }
 
-  /* line 636, ../scss/screen.scss */
+  /* line 626, ../scss/screen.scss */
   50% {
     transform: rotateY(360deg) rotateX(-60deg);
     -webkit-transform: rotateY(360deg) rotateX(-60deg);
@@ -1394,7 +1394,7 @@ body {
     -o-transform: rotateY(360deg) rotateX(-60deg);
   }
 
-  /* line 637, ../scss/screen.scss */
+  /* line 627, ../scss/screen.scss */
   100% {
     transform: rotateY(720deg) rotateX(60deg);
     -webkit-transform: rotateY(720deg) rotateX(60deg);
@@ -1405,7 +1405,7 @@ body {
 }
 
 @-webkit-keyframes rotate3d {
-  /* line 635, ../scss/screen.scss */
+  /* line 625, ../scss/screen.scss */
   0% {
     transform: rotateY(0deg) rotateX(60deg);
     -webkit-transform: rotateY(0deg) rotateX(60deg);
@@ -1414,7 +1414,7 @@ body {
     -o-transform: rotateY(0deg) rotateX(60deg);
   }
 
-  /* line 636, ../scss/screen.scss */
+  /* line 626, ../scss/screen.scss */
   50% {
     transform: rotateY(360deg) rotateX(-60deg);
     -webkit-transform: rotateY(360deg) rotateX(-60deg);
@@ -1423,7 +1423,7 @@ body {
     -o-transform: rotateY(360deg) rotateX(-60deg);
   }
 
-  /* line 637, ../scss/screen.scss */
+  /* line 627, ../scss/screen.scss */
   100% {
     transform: rotateY(720deg) rotateX(60deg);
     -webkit-transform: rotateY(720deg) rotateX(60deg);
@@ -1434,7 +1434,7 @@ body {
 }
 
 @-moz-keyframes rotate3d {
-  /* line 635, ../scss/screen.scss */
+  /* line 625, ../scss/screen.scss */
   0% {
     transform: rotateY(0deg) rotateX(60deg);
     -webkit-transform: rotateY(0deg) rotateX(60deg);
@@ -1443,7 +1443,7 @@ body {
     -o-transform: rotateY(0deg) rotateX(60deg);
   }
 
-  /* line 636, ../scss/screen.scss */
+  /* line 626, ../scss/screen.scss */
   50% {
     transform: rotateY(360deg) rotateX(-60deg);
     -webkit-transform: rotateY(360deg) rotateX(-60deg);
@@ -1452,7 +1452,7 @@ body {
     -o-transform: rotateY(360deg) rotateX(-60deg);
   }
 
-  /* line 637, ../scss/screen.scss */
+  /* line 627, ../scss/screen.scss */
   100% {
     transform: rotateY(720deg) rotateX(60deg);
     -webkit-transform: rotateY(720deg) rotateX(60deg);
@@ -1463,7 +1463,7 @@ body {
 }
 
 @-ms-keyframes rotate3d {
-  /* line 635, ../scss/screen.scss */
+  /* line 625, ../scss/screen.scss */
   0% {
     transform: rotateY(0deg) rotateX(60deg);
     -webkit-transform: rotateY(0deg) rotateX(60deg);
@@ -1472,7 +1472,7 @@ body {
     -o-transform: rotateY(0deg) rotateX(60deg);
   }
 
-  /* line 636, ../scss/screen.scss */
+  /* line 626, ../scss/screen.scss */
   50% {
     transform: rotateY(360deg) rotateX(-60deg);
     -webkit-transform: rotateY(360deg) rotateX(-60deg);
@@ -1481,7 +1481,7 @@ body {
     -o-transform: rotateY(360deg) rotateX(-60deg);
   }
 
-  /* line 637, ../scss/screen.scss */
+  /* line 627, ../scss/screen.scss */
   100% {
     transform: rotateY(720deg) rotateX(60deg);
     -webkit-transform: rotateY(720deg) rotateX(60deg);
@@ -1492,7 +1492,7 @@ body {
 }
 
 @-o-keyframes rotate3d {
-  /* line 635, ../scss/screen.scss */
+  /* line 625, ../scss/screen.scss */
   0% {
     transform: rotateY(0deg) rotateX(60deg);
     -webkit-transform: rotateY(0deg) rotateX(60deg);
@@ -1501,7 +1501,7 @@ body {
     -o-transform: rotateY(0deg) rotateX(60deg);
   }
 
-  /* line 636, ../scss/screen.scss */
+  /* line 626, ../scss/screen.scss */
   50% {
     transform: rotateY(360deg) rotateX(-60deg);
     -webkit-transform: rotateY(360deg) rotateX(-60deg);
@@ -1510,7 +1510,7 @@ body {
     -o-transform: rotateY(360deg) rotateX(-60deg);
   }
 
-  /* line 637, ../scss/screen.scss */
+  /* line 627, ../scss/screen.scss */
   100% {
     transform: rotateY(720deg) rotateX(60deg);
     -webkit-transform: rotateY(720deg) rotateX(60deg);
@@ -1520,172 +1520,13 @@ body {
   }
 }
 
-@keyframes glareSlide {
-  /* line 641, ../scss/screen.scss */
-  0% {
-    left: 200px;
-  }
-
-  /* line 642, ../scss/screen.scss */
-  50% {
-    left: 100px;
-  }
-
-  /* line 643, ../scss/screen.scss */
-  100% {
-    left: 200px;
-  }
-}
-
-@-webkit-keyframes glareSlide {
-  /* line 641, ../scss/screen.scss */
-  0% {
-    left: 200px;
-  }
-
-  /* line 642, ../scss/screen.scss */
-  50% {
-    left: 100px;
-  }
-
-  /* line 643, ../scss/screen.scss */
-  100% {
-    left: 200px;
-  }
-}
-
-@-moz-keyframes glareSlide {
-  /* line 641, ../scss/screen.scss */
-  0% {
-    left: 200px;
-  }
-
-  /* line 642, ../scss/screen.scss */
-  50% {
-    left: 100px;
-  }
-
-  /* line 643, ../scss/screen.scss */
-  100% {
-    left: 200px;
-  }
-}
-
-@-ms-keyframes glareSlide {
-  /* line 641, ../scss/screen.scss */
-  0% {
-    left: 200px;
-  }
-
-  /* line 642, ../scss/screen.scss */
-  50% {
-    left: 100px;
-  }
-
-  /* line 643, ../scss/screen.scss */
-  100% {
-    left: 200px;
-  }
-}
-
-@-o-keyframes glareSlide {
-  /* line 641, ../scss/screen.scss */
-  0% {
-    left: 200px;
-  }
-
-  /* line 642, ../scss/screen.scss */
-  50% {
-    left: 100px;
-  }
-
-  /* line 643, ../scss/screen.scss */
-  100% {
-    left: 200px;
-  }
-}
-
-@keyframes glareSlide2 {
-  /* line 647, ../scss/screen.scss */
-  0% {
-    left: 100px;
-  }
-
-  /* line 648, ../scss/screen.scss */
-  50% {
-    left: 200px;
-  }
-
-  /* line 649, ../scss/screen.scss */
-  100% {
-    left: 100px;
-  }
-}
-
-@-webkit-keyframes glareSlide2 {
-  /* line 647, ../scss/screen.scss */
-  0% {
-    left: 100px;
-  }
-
-  /* line 648, ../scss/screen.scss */
-  50% {
-    left: 200px;
-  }
-
-  /* line 649, ../scss/screen.scss */
-  100% {
-    left: 100px;
-  }
-}
-
-@-moz-keyframes glareSlide2 {
-  /* line 647, ../scss/screen.scss */
-  0% {
-    left: 100px;
-  }
-
-  /* line 648, ../scss/screen.scss */
-  50% {
-    left: 200px;
-  }
-
-  /* line 649, ../scss/screen.scss */
-  100% {
-    left: 100px;
-  }
-}
-
-@-ms-keyframes glareSlide2 {
-  /* line 647, ../scss/screen.scss */
-  0% {
-    left: 100px;
-  }
-
-  /* line 648, ../scss/screen.scss */
-  50% {
-    left: 200px;
-  }
-
-  /* line 649, ../scss/screen.scss */
-  100% {
-    left: 100px;
-  }
-}
-
-@-o-keyframes glareSlide2 {
-  /* line 647, ../scss/screen.scss */
-  0% {
-    left: 100px;
-  }
-
-  /* line 648, ../scss/screen.scss */
-  50% {
-    left: 200px;
-  }
-
-  /* line 649, ../scss/screen.scss */
-  100% {
-    left: 100px;
-  }
-}
+/* @include keyframes(glareSlide) { */
+/*     0% { left: 200px } */
+/*     50% { left: 100px } */
+/*     100% { left: 200px } */
+/* } */
+/* @include keyframes(glareSlide2) { */
+/*     0% { left: 100px } */
+/*     50% { left: 200px } */
+/*     100% { left: 100px } */
+/* } */

@@ -379,9 +379,8 @@ body {
     .power-button-1, .power-button-2, .power-button-3, .power-button-4 {
         width: 40px;
         height: 8px;
-        background: linear-gradient(rgba(#434d57, 0.99) 0%, rgba(#434d57, 0.99) 100%),
-        url("../images/noise.png");
-        border: 1px solid lighten(#434d57, 1.8%);
+        background: darken(#3f4752, 2%);
+        border: 1px solid lighten(#3f4752, 4%);
         @include border-radius(5px);
         position: absolute;
         top: -5px;
@@ -389,7 +388,7 @@ body {
         @include my-transform(rotateX(90deg));
     }
     .power-button-1 {
-        @include box-shadow(0 0 1px 0 #232d39);
+        @include box-shadow(0 0 1px 0 draken(#232d39, 8%));
         border-bottom: 1px solid darken(#99a3af, 16%);
         border-top: 1px solid darken(#99a3af, 16%);
     }
@@ -400,15 +399,13 @@ body {
         height: 6px;
         top: -6.5px;
         right: 41px;
-        background: linear-gradient(rgba(#3f4752, 0.985) 0%, rgba(#3f4752, 0.985) 100%),
-        url("../images/noise.png");
+        background: darken(#3f4752, 2%);
         border: 1px solid #434d57;
     }
 
 
     .mute-button-1, .mute-button-2, .mute-button-3, .mute-button-4 {
-        background: linear-gradient(rgba(#434d57, 0.99) 0%, rgba(#434d57, 0.99) 100%),
-        url("../images/noise.png");
+        background: #434d57;
         border: 1px solid lighten(#434d57, 1.8%);
         @include border-radius(2px);
         position: absolute;
@@ -420,8 +417,7 @@ body {
         width: 10px;
         height: 22px;
         top: 99px;
-        background: linear-gradient(rgba(#424a54, 0.99) 0%, rgba(#424a54, 0.99) 100%),
-        url("../images/noise.png");
+        background: #313841;
         @include box-shadow(0 0 1px 0 rgba(#111924, 0.5) inset);
         border: none;
         border-left: 1px solid rgba(#111924, 0.7);
@@ -445,19 +441,14 @@ body {
         height: 18px;
         left: -3.5px;
         top: 101px;
-        background: linear-gradient(rgba(#3f4752, 0.985) 0%, rgba(#3f4752, 0.985) 100%),
-        url("../images/noise.png");
+        background: #3f4752;
         border: 1px solid #434d57;
     }
-
-
-
     .volume-up-1, .volume-up-2, .volume-up-3, .volume-up-4,
     .volume-down-1, .volume-down-2, .volume-down-3, .volume-down-4 {
         width: 14px;
         height: 14px;
-        background: linear-gradient(rgba(#434d57, 0.99) 0%, rgba(#434d57, 0.99) 100%),
-        url("../images/noise.png");
+        background: #434d57;
         border: 1px solid lighten(#434d57, 1.8%);
         @include border-radius(7px);
         position: absolute;
@@ -477,8 +468,7 @@ body {
         height: 12px;
         left: -8.5px;
         top: 151px;
-        background: linear-gradient(rgba(#3f4752, 0.985) 0%, rgba(#3f4752, 0.985) 100%),
-        url("../images/noise.png");
+        background: #3f4752;
         border: 1px solid #434d57;
         &:after {
             content: "+";
@@ -637,14 +627,14 @@ body {
     100% { @include my-transform(rotateY(720deg) rotateX(60deg))}
 }
 
-@include keyframes(glareSlide) {
-    0% { left: 200px }
-    50% { left: 100px }
-    100% { left: 200px }
-}
+/* @include keyframes(glareSlide) { */
+/*     0% { left: 200px } */
+/*     50% { left: 100px } */
+/*     100% { left: 200px } */
+/* } */
 
-@include keyframes(glareSlide2) {
-    0% { left: 100px }
-    50% { left: 200px }
-    100% { left: 100px }
-}
+/* @include keyframes(glareSlide2) { */
+/*     0% { left: 100px } */
+/*     50% { left: 200px } */
+/*     100% { left: 100px } */
+/* } */
