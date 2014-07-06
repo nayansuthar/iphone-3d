@@ -79,7 +79,11 @@ body {
   -ms-transform: rotateY(60deg);
   -o-transform: rotateY(60deg);
   transform: rotateY(60deg);
-  /* @include animation (rotate3d, 36s); */
+  animation: rotate3d 36s linear infinite 0s;
+  -webkit-animation: rotate3d 36s linear infinite 0s;
+  -moz-animation: rotate3d 36s linear infinite 0s;
+  -ms-animation: rotate3d 36s linear infinite 0s;
+  -o-animation: rotate3d 36s linear infinite 0s;
   /* .glare { */
   /*     width: 100%; */
   /*     height: 100%; */

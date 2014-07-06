@@ -59,7 +59,7 @@ body {
     margin: -265px -125px;
     @include transform-style(preserve-3d);
     @include rotateY(60deg);
-    /* @include animation (rotate3d, 36s); */
+    @include animation (rotate3d, 36s);
 
     //-----Object-Layers
     .layer {
