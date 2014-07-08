@@ -38,6 +38,10 @@ body {
     font-size: 14px;
     color: rgba(#000, 0.12);
     line-height: 1.6em;
+    a {
+        color: rgba(#000, 0.24);
+        text-decoration: none;
+    }
 }
 .object-wrapper {
     width: 100%;
@@ -58,7 +62,7 @@ body {
     left: 50%;
     margin: -265px -125px;
     @include transform-style(preserve-3d);
-    @include rotateY(60deg);
+    @include rotateY(160deg);
     @include animation (rotate3d, 36s);
 
     //-----Object-Layers
@@ -255,7 +259,7 @@ body {
         &:before {
             width: 20px;
             height: 20px;
-            margin: -10px;
+            margin: -8px -10px;
             background: linear-gradient(#0d0908 0%, #2c3031 100%);
             @include rotate(-90deg);
             @include box-shadow (-1px 0 0 0 rgba(white, 0.15), 1px 0 0 0 rgba(white, 0.1));
