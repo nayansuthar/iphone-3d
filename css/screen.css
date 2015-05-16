@@ -634,7 +634,7 @@ body {
 .iphone .back-cam:before {
   width: 20px;
   height: 20px;
-  margin: -8px -10px;
+  margin: -10px;
   background: linear-gradient(#0d0908 0%, #2c3031 100%);
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);

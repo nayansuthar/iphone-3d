@@ -259,7 +259,7 @@ body {
         &:before {
             width: 20px;
             height: 20px;
-            margin: -8px -10px;
+            margin: -10px;
             background: linear-gradient(#0d0908 0%, #2c3031 100%);
             @include rotate(-90deg);
             @include box-shadow (-1px 0 0 0 rgba(white, 0.15), 1px 0 0 0 rgba(white, 0.1));
